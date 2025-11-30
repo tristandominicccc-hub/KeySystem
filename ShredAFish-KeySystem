@@ -171,7 +171,7 @@ VerifyBtn.MouseButton1Click:Connect(function()
         wait(1)
 
         -- UNLOCK SCRIPT (PUT YOUR SCRIPT HERE)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tristandominicccc-hub/duminik.gg/refs/heads/main/HatchABird"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tristandominicccc-hub/duminik.gg/refs/heads/main/ShredAFish"))()
 
         ScreenGui:Destroy() -- remove GUI
     else
