@@ -1,0 +1,199 @@
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+local HttpService = game:GetService("HttpService")
+local TweenService = game:GetService("TweenService")
+
+--/// CONFIG ///--
+local DisplayCode = "93737"
+local RealKey = "duminikgg-ggggg"
+local DiscordLink = "https://discord.gg/ZRZ6N5Ef8" -- FULL discord link copied
+--////////////////--
+
+-- Create GUI
+local ScreenGui = Instance.new("ScreenGui", PlayerGui)
+ScreenGui.Name = "KeySystem"
+
+local Frame = Instance.new("Frame", ScreenGui)
+Frame.Size = UDim2.new(0, 400, 0, 360)
+Frame.Position = UDim2.new(0.5, -200, 0.5, -180)
+Frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame.BorderSizePixel = 0
+
+local UICorner = Instance.new("UICorner", Frame)
+UICorner.CornerRadius = UDim.new(0, 12)
+
+local UIStroke = Instance.new("UIStroke", Frame)
+UIStroke.Thickness = 2
+UIStroke.Color = Color3.fromRGB(80, 80, 80)
+
+-- Gradient Background Effect
+local Gradient = Instance.new("UIGradient", Frame)
+Gradient.Rotation = 45
+Gradient.Color = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 25, 25)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(35, 35, 35))
+})
+
+-- Title with better styling
+local Title = Instance.new("TextLabel", Frame)
+Title.Size = UDim2.new(1, 0, 0, 60)
+Title.BackgroundTransparency = 1
+Title.Text = "HATCH A BIRD KEY SYSTEM"
+Title.TextSize = 28
+Title.Font = Enum.Font.GothamBold
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextStrokeTransparency = 0.8
+
+-- Display Code Section
+local DisplayFrame = Instance.new("Frame", Frame)
+DisplayFrame.Size = UDim2.new(1, -40, 0, 50)
+DisplayFrame.Position = UDim2.new(0, 20, 0, 60)
+DisplayFrame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+DisplayFrame.BorderSizePixel = 0
+
+local DisplayCorner = Instance.new("UICorner", DisplayFrame)
+DisplayCorner.CornerRadius = UDim.new(0, 8)
+
+local DisplayLabel = Instance.new("TextLabel", DisplayFrame)
+DisplayLabel.Size = UDim2.new(1, 0, 1, 0)
+DisplayLabel.BackgroundTransparency = 1
+DisplayLabel.Text = "Copy the Code and Redeem in my Discord: "..DisplayCode
+DisplayLabel.TextSize = 18
+DisplayLabel.Font = Enum.Font.Gotham
+DisplayLabel.TextColor3 = Color3.fromRGB(120, 255, 120)
+
+-- KEY INPUT BOX
+local KeyBox = Instance.new("TextBox", Frame)
+KeyBox.Size = UDim2.new(1, -40, 0, 50)
+KeyBox.Position = UDim2.new(0, 20, 0, 125)
+KeyBox.PlaceholderText = "🔐 Enter Access Key..."
+KeyBox.PlaceholderColor3 = Color3.fromRGB(150, 150, 150)
+KeyBox.Text = ""
+KeyBox.TextSize = 18
+KeyBox.Font = Enum.Font.Gotham
+KeyBox.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+KeyBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeyBox.ClearTextOnFocus = false
+
+local KeyBoxCorner = Instance.new("UICorner", KeyBox)
+KeyBoxCorner.CornerRadius = UDim.new(0, 8)
+
+-- VERIFY BUTTON
+local VerifyBtn = Instance.new("TextButton", Frame)
+VerifyBtn.Size = UDim2.new(1, -40, 0, 50)
+VerifyBtn.Position = UDim2.new(0, 20, 0, 190)
+VerifyBtn.Text = "✅ VERIFY KEY"
+VerifyBtn.TextSize = 20
+VerifyBtn.Font = Enum.Font.GothamBold
+VerifyBtn.BackgroundColor3 = Color3.fromRGB(0, 180, 0)
+VerifyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+VerifyBtn.AutoButtonColor = false
+
+local VerifyCorner = Instance.new("UICorner", VerifyBtn)
+VerifyCorner.CornerRadius = UDim.new(0, 8)
+
+-- DISCORD BUTTON
+local DiscordBtn = Instance.new("TextButton", Frame)
+DiscordBtn.Size = UDim2.new(1, -40, 0, 50)
+DiscordBtn.Position = UDim2.new(0, 20, 0, 255)
+DiscordBtn.Text = "💬 COPY DISCORD LINK"
+DiscordBtn.TextSize = 18
+DiscordBtn.Font = Enum.Font.GothamBold
+DiscordBtn.BackgroundColor3 = Color3.fromRGB(88, 101, 242)
+DiscordBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiscordBtn.AutoButtonColor = false
+
+local DiscordCorner = Instance.new("UICorner", DiscordBtn)
+DiscordCorner.CornerRadius = UDim.new(0, 8)
+
+-- NOTE LABEL (KEPT AND IMPROVED)
+local Note = Instance.new("TextLabel", Frame)
+Note.Size = UDim2.new(1, -40, 0, 40)
+Note.Position = UDim2.new(0, 20, 0, 320)
+Note.BackgroundTransparency = 1
+Note.TextSize = 14
+Note.Font = Enum.Font.Gotham
+Note.Text = "📝 Copy the code and join our Discord to redeem your key"
+Note.TextColor3 = Color3.fromRGB(255, 255, 150)
+Note.TextWrapped = true
+
+-- Button hover effects
+local function createButtonEffects(button, normalColor, hoverColor)
+    button.MouseEnter:Connect(function()
+        local tween = TweenService:Create(button, TweenInfo.new(0.2), {BackgroundColor3 = hoverColor})
+        tween:Play()
+    end)
+    
+    button.MouseLeave:Connect(function()
+        local tween = TweenService:Create(button, TweenInfo.new(0.2), {BackgroundColor3 = normalColor})
+        tween:Play()
+    end)
+    
+    button.MouseButton1Down:Connect(function()
+        local tween = TweenService:Create(button, TweenInfo.new(0.1), {BackgroundColor3 = normalColor})
+        tween:Play()
+    end)
+    
+    button.MouseButton1Up:Connect(function()
+        local tween = TweenService:Create(button, TweenInfo.new(0.1), {BackgroundColor3 = hoverColor})
+        tween:Play()
+    end)
+end
+
+-- Apply effects to buttons
+createButtonEffects(VerifyBtn, Color3.fromRGB(0, 180, 0), Color3.fromRGB(0, 200, 0))
+createButtonEffects(DiscordBtn, Color3.fromRGB(88, 101, 242), Color3.fromRGB(114, 137, 218))
+
+-- FUNCTION: Copy Discord Link
+DiscordBtn.MouseButton1Click:Connect(function()
+    setclipboard(DiscordLink)
+    local originalText = DiscordBtn.Text
+    DiscordBtn.Text = "✅ LINK COPIED!"
+    
+    local tween = TweenService:Create(DiscordBtn, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(0, 180, 0)})
+    tween:Play()
+    
+    wait(1.5)
+    
+    DiscordBtn.Text = originalText
+    local revertTween = TweenService:Create(DiscordBtn, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(88, 101, 242)})
+    revertTween:Play()
+end)
+
+-- FUNCTION: VERIFY KEY
+VerifyBtn.MouseButton1Click:Connect(function()
+    if KeyBox.Text == RealKey then
+        VerifyBtn.Text = "✅ ACCESS GRANTED!"
+        local tween = TweenService:Create(VerifyBtn, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(0, 150, 0)})
+        tween:Play()
+        
+        wait(1)
+
+        -- UNLOCK SCRIPT (PUT YOUR SCRIPT HERE)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tristandominicccc-hub/duminik.gg/refs/heads/main/HatchABird"))()
+
+        ScreenGui:Destroy() -- remove GUI
+    else
+        VerifyBtn.Text = "❌ INVALID KEY!"
+        local tween = TweenService:Create(VerifyBtn, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(180, 0, 0)})
+        tween:Play()
+        
+        wait(1.5)
+        
+        VerifyBtn.Text = "✅ VERIFY KEY"
+        local revertTween = TweenService:Create(VerifyBtn, TweenInfo.new(0.3), {BackgroundColor3 = Color3.fromRGB(0, 180, 0)})
+        revertTween:Play()
+    end
+end)
+
+-- KeyBox focus effects
+KeyBox.Focused:Connect(function()
+    local tween = TweenService:Create(KeyBox, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(55, 55, 55)})
+    tween:Play()
+end)
+
+KeyBox.FocusLost:Connect(function()
+    local tween = TweenService:Create(KeyBox, TweenInfo.new(0.2), {BackgroundColor3 = Color3.fromRGB(45, 45, 45)})
+    tween:Play()
+end)
