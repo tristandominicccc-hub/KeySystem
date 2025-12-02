@@ -5,8 +5,8 @@ local HttpService = game:GetService("HttpService")
 local TweenService = game:GetService("TweenService")
 
 --/// CONFIG ///--
-local DisplayCode = "14729"
-local RealKey = "duminik.gg-9ok61"
+local DisplayCode = "11004"
+local RealKey = "duminik.gg-yhi41"
 local DiscordLink = "https://discord.gg/ZRZ6N5Ef8" -- FULL discord link copied
 --////////////////--
 
