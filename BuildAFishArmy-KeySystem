@@ -6,7 +6,7 @@ local TweenService = game:GetService("TweenService")
 
 --/// CONFIG ///--
 local DisplayCode = "99999"
-local RealKey = "duminik.gg-twvk1"
+local RealKey = "duminik.gg-705n6"
 local DiscordLink = "https://discord.gg/ZRZ6N5Ef8" -- FULL discord link copied
 --////////////////--
 
