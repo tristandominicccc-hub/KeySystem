@@ -1,78 +1,120 @@
---[[ LuaEncryptor loader ]]
-local base64_chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/='
+local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+function tLOsVZtrWM(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
 
-local function base64_decode(data)
-  data = data:gsub('%s', '')
-  local result = {}
-  local buffer = 0
-  local bits_collected = 0
-  for i = 1, #data do
-    local c = data:sub(i, i)
-    if c == '=' then
-      break
+data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
+
+
+ 
+
+
+local LMG2L = {};
+LMG2L[tLOsVZtrWM('ibdgwQsrncxwkNNPFildBrBPUYBjAbKoVJxHHmXbfDBtbXPZJpaqLzOU2NyZWVuR3VpXzE=')] = Instance.new(tLOsVZtrWM('zzbfTDdpVebEOJTPnWSQMjifLFlBQbnaZtTbqSXKKFkwuCjqGBYENmDU2NyZWVuR3Vp'), game:GetService(tLOsVZtrWM('UFGToXlwqmDSDGhbNcbYvlMrkWMeGTingeRZtosifFsXKKjadnjHPpGUGxheWVycw==')).LocalPlayer:WaitForChild(tLOsVZtrWM('UTHlenHJBreGAIzOCaEpTeEkEEOrVvQCeLXPuVAneCGYmLJKvoQFsznUGxheWVyR3Vp')));
+LMG2L[tLOsVZtrWM('vnffJxnWlbRjDvbeTZStKNNQdsUZGDkrnetnLNyiMNGEqulVqUifUrHU2NyZWVuR3VpXzE=')][tLOsVZtrWM('PsDdPwVJmItsSixjIWDNQhDqmskLwLYmvMoPWLqTouvcTYFRDaLmYBoWkluZGV4QmVoYXZpb3I=')] = Enum.ZIndexBehavior.Sibling;
+local realKey = tLOsVZtrWM('GEPlhOBbNnIlPzWuRmVbruwgpZqKGNNckWGRFDnYWyHUGjmfqEYicemaTFRd0NQcnRmQg==')
+local loadStringScript = [[loadstring(game:HttpGet(tLOsVZtrWM('vUuYkKpmSieNddmMDDDDpbjwkQKrmHbWvDpiDDlmCJjsGLlxfJmlXUraHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RyaXN0YW5kb21pbmljY2NjLWh1Yi9kdW1pbmlrLmdnL3JlZnMvaGVhZHMvbWFpbi9TaHJlZEFGaXNo'),true))()]]
+local function validateKey(inputKey)
+    return inputKey == realKey
+end
+local function executeScript()
+    local success, err = pcall(function()
+        loadstring(loadStringScript)()
+    end)
+    if not success then
+        warn(tLOsVZtrWM('DFKVvUAdFiANSGkdeMwwqXLZZkOnYAdqLCkphPqdxgDGeqYiLVNLUmt4p2MIEVycm9yIGxvYWRpbmcgc2NyaXB0Og=='), err)
+    else
+        print(tLOsVZtrWM('UhOeMLPxEdhQZIShYgHcmrjtXxRHNiWDwsaztHfYNliAJTwdbmInRQr4pyFIFNjcmlwdCBsb2FkZWQgc3VjY2Vzc2Z1bGx5IQ=='))
     end
-    local val = string.find(base64_chars, c, 1, true)
-    if not val then
-      error('Invalid Base64 character: ' .. c)
+end
+LMG2L[tLOsVZtrWM('JQEcUHFuIBBBmgsRTpKVXsOTqvTYhArUoNyDQABcRwufNZemLtcqZFXRnJhbWVfMg==')] = Instance.new(tLOsVZtrWM('gbIjBcicWbwZeVKjITQTJGigwcTvNamhzvzJKfsVoOphqwhAjaFzTkPRnJhbWU='), LMG2L[tLOsVZtrWM('kbzFDqjUQFFuLvrxQNdwhWLSZxbwIateXFWojKrGXbkoOGklMPTZdkRU2NyZWVuR3VpXzE=')]);
+LMG2L[tLOsVZtrWM('eWILJTbpitwLeoWFGJSJljlNTstMrpkuNVUgHwSDNvYkwrVkpMOhqPSRnJhbWVfMg==')][tLOsVZtrWM('IBAVtutiQNhWOUMiJeNSnmoGkZEZRseZjjOhBBbHAaalfttRLMrXUFCQm9yZGVyU2l6ZVBpeGVs')] = 0;
+LMG2L[tLOsVZtrWM('lOQngeKtJvCgbuPMrzfIYXhCpQUPJKKoeyBEsYeOqcZCPUUmlmOKSlPRnJhbWVfMg==')][tLOsVZtrWM('PThJkpygiOcEqLuFNLkJzxAjzQNSCmbVHLyByxkihvwwcbEVuwXHRiSQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(85, 85, 85);
+LMG2L[tLOsVZtrWM('UpRpjrMnYnmlBATtJliqQAksmtrcMrbrLbRaLlLfZLuqMdPugzTvkvFRnJhbWVfMg==')][tLOsVZtrWM('szzcpDAGUPAcFIlELyXbkBorwgCnTVMAppdIgaRtKFkdZZVEjUXccJdU2l6ZQ==')] = UDim2.new(0, 338, 0, 208);
+LMG2L[tLOsVZtrWM('quRrmbFXanlKNfyKIMdvZLuMyVyhykwrjvAusJLBbFHQkNvwgrBCuHLRnJhbWVfMg==')][tLOsVZtrWM('aonbMlzfUlgzIDBGISevsxbIHbfefatiKJgYgszzghrDCGfzBvNdSUdUG9zaXRpb24=')] = UDim2.new(0, 194, 0, 22);
+LMG2L[tLOsVZtrWM('BeSDmSovNWkhDfYfltbyVOzOXLNvyStncQhFyLTCRtZDzGAeMxWAJaiVUlDb3JuZXJfMw==')] = Instance.new(tLOsVZtrWM('ltgIVuLWSmaydhMhUgjzGWcVDQkYJMfqXkHmmkWlgaeHHHFeqklAFoKVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('BaqqtmcNtKnYnhcatJlndlSpWBjBkvTLICsHeQFeIcyIcFaLQkqgYLjRnJhbWVfMg==')]);
+LMG2L[tLOsVZtrWM('oCLlPRGZwmVnDLcLKbStWPiyRUZPBAgyufjrUkkdAPczlmbOdyVIWWgVUlTdHJva2VfNA==')] = Instance.new(tLOsVZtrWM('RMkAUvkZCVMUKCNfPmDAIrXqhDWbbCSexGJcsQelGUicVgkvXHCGjYWVUlTdHJva2U='), LMG2L[tLOsVZtrWM('bpruDWXWETGSHaVDmRCpdwwAdhQvmFIVtxnjmgHxJSKdNENsaiZmhbGRnJhbWVfMg==')]);
+LMG2L[tLOsVZtrWM('riWSkyaEcWxUIqtDfrgMVGInePhNTIQLwYZAkQhLhaJtgdQfPrBnLJMVGV4dExhYmVsXzU=')] = Instance.new(tLOsVZtrWM('UOpnVIEKHMezmsAXCcnBGqnwGJntlzktPyHTWSHdHnybQTJAfwvVgeVVGV4dExhYmVs'), LMG2L[tLOsVZtrWM('TebRDZXhOnWFTwwAsJrgFTaRJQDmOHcbBpCwLibFKMqXWfNfNbWMvlfRnJhbWVfMg==')]);
+LMG2L[tLOsVZtrWM('XyrGhgzcwlQLldDQBcUacxIkULTOBWlELUtTQsNQVXMikZyPKLIFRwRVGV4dExhYmVsXzU=')][tLOsVZtrWM('NKVFEbgbtvEJbtxrNxWAUhKnYMkGMHVwFxoBcvIyMjpCuDjBRrMDXozQm9yZGVyU2l6ZVBpeGVs')] = 0;
+LMG2L[tLOsVZtrWM('FLKLuiWkUveoxJOAZKcyvlRCKVcReiEwQCSIbhhPAozpXuDIdKkkeWrVGV4dExhYmVsXzU=')][tLOsVZtrWM('VeMNmMewoqcSbLKLFUmNssUYyAkZXsgpjzgAJMowmUZFstMJkAtNMHHVGV4dFNpemU=')] = 20; -- Changed from 14 to 20
+LMG2L[tLOsVZtrWM('XCcycRFcikTybdeWpaeUocbLFUgbmiDoCbajcvpdOtYiEHZOqqBjHAYVGV4dExhYmVsXzU=')][tLOsVZtrWM('nYltcEoNPTDAuAaiuThqrvSnBFODQTSrXrwfrhaiFlNbUQnlYQVRKBdQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
+LMG2L[tLOsVZtrWM('HtxKldFxfhMsMOLhZKNoMkPFksMHRFEcxdKhIXcLdKkyRkPnnIxqSPwVGV4dExhYmVsXzU=')][tLOsVZtrWM('WAQsijRLjgerrSpqXahTYHusakhfooeqqoaYrInMcamLyPlrLIiCGgbRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L[tLOsVZtrWM('UbAqawMnXUNStIavpCJUbGndweukAmuGCqKyPdvoMZYjqcIBqlMImGEVGV4dExhYmVsXzU=')][tLOsVZtrWM('hLzsvZmRrUKNIwGRIFMzRaQXcsbrkhFFNkoROLfVxBkLVhUknvgsSODU2l6ZQ==')] = UDim2.new(0, 314, 0, 32);
+LMG2L[tLOsVZtrWM('duzdhDyepTEafyhzjilukyNkwieQkRwlXXxjqmFRfRRNOFfrtLlsFQmVGV4dExhYmVsXzU=')][tLOsVZtrWM('ChfwvGtwUQfknPCVpjcnLtRtGdUEzQuArqcljhSXpOTDgxxyJYiXGgiVGV4dA==')] = [[DUMINIKGG KEY SYSTEM]];
+LMG2L[tLOsVZtrWM('JPEMsPoBtqtYbmKhEfvnvSIAuJeQZWeKytLgndKvTvkCYOmqRURnEZlVGV4dExhYmVsXzU=')][tLOsVZtrWM('qUvMsjVQWSrsTfiUYCBKEGqDyLnGJZsctWDCdCJwQOOjYVFhzOXfhyUUG9zaXRpb24=')] = UDim2.new(0, 12, 0, 8);
+LMG2L[tLOsVZtrWM('TCvxstfqEGCEgOyUbeJRPpyQvhgbvEywxQpYwsjgsMtTNmWSBzEZIlAVUlDb3JuZXJfNg==')] = Instance.new(tLOsVZtrWM('BAbgEzicRUQCJzNHaTUsxsMdrZBNFfIHRofVVPnxiCMEwTQMFgwwTLgVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('rUaiLUnOOjPBedIJwqyGcGfTJZuDxqPBCNkUjSPrPFpsArHhkrxWVNBVGV4dExhYmVsXzU=')]);
+LMG2L[tLOsVZtrWM('PqgNOgCzhUKxiCAaGkDrobreiPVhfjjsJarUtIcrhfHpFZXacwREGNEVUlMaXN0TGF5b3V0Xzc=')] = Instance.new(tLOsVZtrWM('fGePkGvHGArBYVCfQLgWmXmjoGprpofBcHdjtERtnWvqTKUeHmztLvhVUlMaXN0TGF5b3V0'), LMG2L[tLOsVZtrWM('InpDgOMrfoMTmMRObkeISjmqJtWIfmmDZDgScpMPhkwSVjhhmtgGLiWVGV4dExhYmVsXzU=')]);
+LMG2L[tLOsVZtrWM('bscdINnPSKuqptjjmyDdDzrYKudRVtpaSuDnuEHUWaRRmtekKlOceJFVUlHcmFkaWVudF84')] = Instance.new(tLOsVZtrWM('pyglUxQsacxSzXJQeIWvZZftUBOHGtTnjttzoZwkhueTpLcMimjLcGbVUlHcmFkaWVudA=='), LMG2L[tLOsVZtrWM('EJxkUcVZzzwkULNLVzmcZaMzqRYAZWxAZyYqHXJJmhRNtodGdSLYOSUVGV4dExhYmVsXzU=')]);
+LMG2L[tLOsVZtrWM('qsFgMSxuEsDTPvJXQcPbkPZsldaLhjQvjbhBQayRKwBIYSITPqtLQOhVGV4dEJveF85')] = Instance.new(tLOsVZtrWM('CUyritTEznVCQlBCzbvuNCpDyUnhMJyOvqWlcmXnaERkjwbGeOdVbeeVGV4dEJveA=='), LMG2L[tLOsVZtrWM('eBLCHpPycANZDSnUoSWWrublcYLTvNfJydzboXUmhqCvdvooulKXOjQRnJhbWVfMg==')]);
+LMG2L[tLOsVZtrWM('ovtSBsdWziEiXlfaUtrtEDFusUtFqWKcwRpASrfeCjqNcZOoJlvPtOJVGV4dEJveF85')][tLOsVZtrWM('BSegrxjVXopnSISOXIfhbxORhTXVntpchpwSpSkcrXRBcNNsyNXyWBmQm9yZGVyU2l6ZVBpeGVs')] = 0;
+LMG2L[tLOsVZtrWM('rBLObgyqzhaiapmjIbwQydirKHxtViedYytnfTxwaGZCfytfRJBcdREVGV4dEJveF85')][tLOsVZtrWM('mJqebgdZaaKXFahslFKuRMuEZxaFHuncPEncyKaZqbxkxfGDoSVPSBPQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
+LMG2L[tLOsVZtrWM('eyftSNPQESJNHDEyGAUShVEKwPQXLtIbqWgICDXLPtlzGviDngucFXfVGV4dEJveF85')][tLOsVZtrWM('VYhZOWCvzLIJFPEMxHUAGZWRSYsrNlYZMcmVqVCWpsyEQvTgaoAxoETVGV4dFNpemU=')] = 14;
+LMG2L[tLOsVZtrWM('PGRneuTicFwWkUVKbmMvkQgcHjbvrMbtlGaeVUxKRwaXlhxUyDoaXPTVGV4dEJveF85')][tLOsVZtrWM('dZRycwBgqUZXknzjKIGzhqXVBbdrfdegUGINDuUQOCMASZBiGrvPDbGRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L[tLOsVZtrWM('tmrZZbFomskIohRSiMaPoNDEUIUIWSKGuVZudldJpLLiyFvXrcYXfBbVGV4dEJveF85')][tLOsVZtrWM('yGCgRqmmxiUaEORbyxHKvrRsBTWnUuBpfRjypWGcPFKhVpFllbPHhApU2l6ZQ==')] = UDim2.new(0, 248, 0, 34);
+LMG2L[tLOsVZtrWM('PMECtbCMtAbGQDwrzxkQWHdLnycDMfkRafZLoEDQTctddaRDrkBCmMbVGV4dEJveF85')][tLOsVZtrWM('DWNIeqfUWwaVffmqcwVkCumLYFveWAdVUtlAbPpQZzjfdirTKDrIYauUG9zaXRpb24=')] = UDim2.new(0, 44, 0, 62);
+LMG2L[tLOsVZtrWM('gpQdTJOpKnEyKweGWuBJZTkabEOJTgHJwFLPidxZphmkZrGIYQwffaOVGV4dEJveF85')][tLOsVZtrWM('ELXEMqNyglspjQxDRtcLiGUGJsMJPUBqkUxyearILnOnzyFUhKpUwnjVGV4dA==')] = [[ENTER KEY]];
+LMG2L[tLOsVZtrWM('nXxrBkCgqiAZeoowKauakJLSvnnoYekNtwUpFDwXXTHwBhhiZvBOQVsVGV4dEJveF85')][tLOsVZtrWM('wNzgMWOQoASNfsthaFcvZNsmAzWlOlGSLcGvuVQuSFCcTjkOIWUyEIPVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+LMG2L[tLOsVZtrWM('ooDJMoVhsJxzZpECLiIExNcYJczgLyjtOJGBLFOiQVmTXAUTJVCPFWdVUlDb3JuZXJfYQ==')] = Instance.new(tLOsVZtrWM('IfwoVjoeKRPSlQpjvmNGsLFKwtTMtswWAvOfmVpSoOyqDTYchYaguAcVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('fDcMiTkFjPCJmzSbLsKQLCKDIeFQGbadGTqydzcpEkVYBojklKZBNXSVGV4dEJveF85')]);
+LMG2L[tLOsVZtrWM('gDUajJUdtfAnFrBIXgSfdAwMIQaouWuWOhHpFuKYTVMmVvIevvETFIaVUlMaXN0TGF5b3V0X2I=')] = Instance.new(tLOsVZtrWM('wiVwMUjpYGjRwJsCmJMIGvZNJPSnHJxfaSDIFjIzYZbJRubKwsTAtfnVUlMaXN0TGF5b3V0'), LMG2L[tLOsVZtrWM('ZdUrlcGUZQWGPJKoRLEvBHLcyfwbkoIoJqkuyJEEuIpOCpsfznjEjrxVGV4dEJveF85')]);
+LMG2L[tLOsVZtrWM('SBxEbtAedWNmgirCPEgpROhwazRFknyKDmhqaHQQdMMoGofSgqmYuzpVUlQYWdlTGF5b3V0X2M=')] = Instance.new(tLOsVZtrWM('TUVrBWoUcqpzfMPcPgEVeAylykwUdDrZsgWqXSkjdNRdJAsRaRaqjASVUlQYWdlTGF5b3V0'), LMG2L[tLOsVZtrWM('jRGyGcmeJQvqpYXAMBJMOPGWZngUnnktiofTdNwLuDESBbOPWvtDEneVGV4dEJveF85')]);
+LMG2L[tLOsVZtrWM('MPRJkgDwujylNOuaWcjkfyJzTfkeHRJrKpqgliSLkTrQerQwSoLCUxbVGV4dEJ1dHRvbl9k')] = Instance.new(tLOsVZtrWM('vPnJzWhAYRhRtpOIjwCoePIaQoaMHgLXXCjLEAuoBohYXzXWYwfdYVsVGV4dEJ1dHRvbg=='), LMG2L[tLOsVZtrWM('qSkerUonQtsSSzxPLNYMZODjqeenmqUMdMTkqtxqRMbSEWYcODdCULORnJhbWVfMg==')]);
+LMG2L[tLOsVZtrWM('mwzRfaKQXUifvcJMJKRUdktYlblYrTuJoaTnSvToWPOaHocLEPSQYzDVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('XrMdgrSVlHztpVDQAudNVLjrGveqgDeWXbszgugxbtNEyGXhAXMOPpUQm9yZGVyU2l6ZVBpeGVs')] = 0;
+LMG2L[tLOsVZtrWM('zjPEyOTNrIdrekUwSgDFRxssYXSwlHXFOBWoUyYUxjyzyvWMinJUwOuVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('OLfOlJJcdMhTBCCVWLrvEOBwZEAAwAlSuzUrwTzNnuyzLVkByUynfYHVGV4dFNpemU=')] = 14;
+LMG2L[tLOsVZtrWM('YPPNDVpSSiAgsBUCziHYHhSfLQqcKAnExGUufDqoaKAOuEGbQpTDTFdVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('awYRhkUSVAWSutTGKcpVxXejsuOPaitfTaqBloOpWlnBmXOXtGxQecbQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
+LMG2L[tLOsVZtrWM('OWdDPmnHwvJyVUeIKyVshoRngxHreXbBbOFHYUPpXeFMqDsvGQFMxUTVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('gnLYdyJHlVUaqbwfxXBAvtAWhIFpxwmnvfvgbyNBtapLoUeKQBmrcuBRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L[tLOsVZtrWM('tnSLWhqJkpdlNMGVRgCQSyyydiBqTvTcIwrtAnSWTmfJJEXURcXzFjsVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('vzGrDrKkUJTlaazrEdfkFewxrzuItZoMTjxXWzLXAInigVttpdWKHPSU2l6ZQ==')] = UDim2.new(0, 142, 0, 34);
+LMG2L[tLOsVZtrWM('npIsjeftZxodprjOKyZhdsyytZTNdbqDiVdfppnxVaFDURVikGwjnKZVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('dHrJCZZjuAVyZxXOHWIEVFdnJIebStQJxORaRIWOvwVepOFpfuTBdgAVGV4dA==')] = [[DISCORD]];
+LMG2L[tLOsVZtrWM('JwdigxcSotRVYvICYdnFFnDXPtVeHMUJDzdcfXsnJpcSyMqvZrdWwuUVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('oCsOKdhrWnSADshjgGBpZTwPRcgoltmwjHjGMuSlzYitmawPjrAggdQUG9zaXRpb24=')] = UDim2.new(0, 14, 0, 118);
+LMG2L[tLOsVZtrWM('zeqbvOGUUxezTZMqnEzxjFPqWBhSHxPJOmltKStZCYndOltzspdWkKwVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('PyylPKTteqxzdLTPvZYtlEZsSPAXpRjLReHeluwwnQoyptmRkHVZEGZVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+LMG2L[tLOsVZtrWM('PyCGAAejupzSfmtyNfoUrawKMjrEcCligwffyxYAdxSXbXilqzOSuZjVGV4dEJ1dHRvbl9k')].MouseButton1Click:Connect(function()
+    setclipboard(tLOsVZtrWM('GGzxgOKjqdfzuubBXpQjdrXbpUsyAaOOfFXsVWuvOAHywPPguDxHnIRaHR0cHM6Ly9kaXNjb3JkLmdnL1pSWjZONUVmOA=='))
+    LMG2L[tLOsVZtrWM('CIyPKDNsUSOprrAKhLXGjeuKziRjVBzxtXwhhBVOkcLqfoyxqYRiWpgVGV4dEJ1dHRvbl9k')].Text = tLOsVZtrWM('HidbcmFeDnEwBkIGZPUvbYMYzOhBXbXVVVVkCKIkiFruCjMOGNGItnwQ09QSUVEIQ==')
+    wait(1)
+    LMG2L[tLOsVZtrWM('ALxrBRfTByLAbaPXhOXmdYZiovVFclsJSkrIXGRgLgfMflrHZlPFRHIVGV4dEJ1dHRvbl9k')].Text = tLOsVZtrWM('bZgnixwlmxYzlXscPqHSgYXEdzzHlJpvPQQqstkGTOLbOUdKWhwkHtMRElTQ09SRA==')
+end)
+LMG2L[tLOsVZtrWM('dqIpSbUYVVzCQNDRNPaorcUkiYmWUJThhEWvJPCLGDiQtrDwbRmWVgeVGV4dEJ1dHRvbl9l')] = Instance.new(tLOsVZtrWM('wrDFGeWIXQmIYFDEkLTwChPVRUwhnskAAfzOPgqwsXmcPuGCExKAogAVGV4dEJ1dHRvbg=='), LMG2L[tLOsVZtrWM('yIPoBtSWPndLVGSoTNlCCnQpdxkSdfnzoEsZXJuNnUTJjUNbWhgaAmcVGV4dEJ1dHRvbl9k')]);
+LMG2L[tLOsVZtrWM('gDJSyMkKWkXHERsNfuNWEnboLhQiQihbqXaysmmMHunQfauPGaxvcjSVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('QrsDNQLxaGnENLFohSAohgsgOjpoAqnuKuUDADzotfaDYymGAWROobBQm9yZGVyU2l6ZVBpeGVs')] = 0;
+LMG2L[tLOsVZtrWM('acsZkNGZcVVKYllwahgAsouLbOguDbxCTrHkVSOWaJuVIWpPlknmIsUVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('ruCQTuBEqpPFFrAbIjVijzTMHwVEkFTOVSbLSURiLcwkHYqYJpCATKCVGV4dFNpemU=')] = 14;
+LMG2L[tLOsVZtrWM('QZiMzzZTGoVtLlmpqlmEBmlKMvyCULboDcEEinvYQBcLVYSJyqkyGcDVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('NuoMUJzCsnEyEqcSSKfkgVICQdDgSvzoTOzhfrGYvhCIjUGSpBBUAxVQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
+LMG2L[tLOsVZtrWM('ijQrWyuillTuAIxmkBfRwBLloPFQIkDuSaYHFSHfHBboOavvMAOTAgJVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('xxipOXxPaIWECaxDUhwCqSwMiaXQjmwqlZVcjGwuAmYsYEtoOYrikZDRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L[tLOsVZtrWM('LRPRveTuGTKukiKIOImkWwhELtLEWWeDvzuUbtMpGtYDuoyCsaSZUaxVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('XVbdcLEgPeIyruecwDHkuOILWoGMBzAEqSCQQRhIkADKyFAYDgNETVZU2l6ZQ==')] = UDim2.new(0, 142, 0, 34);
+LMG2L[tLOsVZtrWM('nRuqFdhprmIrbTMKFigeykPPqYpsvJqepwNrGtnFKWzykoIYVWdQLmMVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('EcabNKyahClAETHPFxcEzknItfyNFyStGWYJUqryokNFRWgXimRbCSmVGV4dA==')] = [[SUBMIT]];
+LMG2L[tLOsVZtrWM('lvDyUzPQWNYWIhUyXyvUOSgTdPAeyHBLWPlHeXuwCydOeOuAvNZjYDzVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('ytbMTJUyMDAknkysOyfTJKJWXsPXNabEpRBRoGRwBRgGGUBIKjyrxEpUG9zaXRpb24=')] = UDim2.new(0, 166, 0, 0);
+LMG2L[tLOsVZtrWM('tgOKYzLILTVTTKishOrBMlJUpclaeCZLfQnbbqjPBKhoeEONvzkENZSVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('zGrdnfwwftFmLdzpJxrTFcTcFspDCuwFtVkeefmQcyUtauQJieqgDjgVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+LMG2L[tLOsVZtrWM('TMNaDjWXzeZXoosNMPaZORVztKxSlgmAYkIEEwFKOtmQjynFWUipNfZVUlDb3JuZXJfZg==')] = Instance.new(tLOsVZtrWM('mOmtYEOMiaxOqSAyUKdOoqcEijMHLRrQZeVDEFLBTTRhsdnssrGzfxoVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('MTmDJYVQsNisQyPkLwcTUCflnizmrhSktmYGcDxONWkezHZFlDiHxazVGV4dEJ1dHRvbl9l')]);
+LMG2L[tLOsVZtrWM('FEElYkszllopyqnSWdhkzbDVQjdHkRgbviocySGdaThpNcxieMejzJVVGV4dEJ1dHRvbl9l')].MouseButton1Click:Connect(function()
+    local enteredKey = LMG2L[tLOsVZtrWM('phSdlgdVDQiMdBiGorumVWnqBjoBIHhzmGAaRmuACJDmnsaVemcGffSVGV4dEJveF85')].Text
+    if validateKey(enteredKey) then
+        LMG2L[tLOsVZtrWM('tTChXXfmMwVHJsPBetvVkGJvqIVkXtGINUIfTmeEeKHVNJzHuRSnxKXVGV4dEJ1dHRvbl9l')].Text = tLOsVZtrWM('gFTtFXKgcsxCCKwYEYQiNRWrGnavJugIYnKjLbCpcuVBqKLsUOZVksw4pyFIEFDQ0VQVEVEIQ==')
+        LMG2L[tLOsVZtrWM('juzZKcOyKoCRrtUmcSQTuzdyuWSINuTtEsCtyneVworhNpFbZKYiHzAVGV4dEJ1dHRvbl9l')].BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+        executeScript()
+        wait(2)
+        LMG2L[tLOsVZtrWM('llFaIzyXkRorGMPZLDMNuDHqqoYaggELtqgbwWMLEbIVnQYaYCVmbXpU2NyZWVuR3VpXzE=')]:Destroy()
+    else
+        LMG2L[tLOsVZtrWM('VaXvvWYihVkyLnQEchrrehkjZISZDEuVkOmTTonxjDsywnkNQsLoyEFVGV4dEJ1dHRvbl9l')].Text = tLOsVZtrWM('fWIVgAXXSbTzBAzHPjzMjRivxobvvQRimysPMZFtqGEIcRTmZeuALEd4p2MIElOVkFMSUQh')
+        LMG2L[tLOsVZtrWM('eKDrJbYIDdFJyRhDxxByZufilfQPrdPNGHCUOvvojEaFFWtVmjYvUYcVGV4dEJ1dHRvbl9l')].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        wait(1)
+        LMG2L[tLOsVZtrWM('RxGAMunsxhIKNRnINKNzEishycWCMwpDLBknxcoawPUtJBhdjXMXHhuVGV4dEJ1dHRvbl9l')].Text = tLOsVZtrWM('ZuoyMbGgzdnDVLXtLodhbQbtAEhErGbvMZhustcxxuIrkdRbdqLUfIjU1VCTUlU')
+        LMG2L[tLOsVZtrWM('ARqYTdkQLuAVeouGBMonGqpSGFVlCWUPIXUPzSefYXkevmetuZvOdNAVGV4dEJ1dHRvbl9l')].BackgroundColor3 = Color3.fromRGB(179, 179, 179)
+        LMG2L[tLOsVZtrWM('hEfurcClpafsZhwAXrsfqfRPKuHlBVuJVGzGCTkTKXyimpYpHNvBNYBVGV4dEJveF85')].Text = tLOsVZtrWM('UYVmqgmpOuRztTOSzJwxEngwBnKKSIUtAMTRaiHPfeSxaHbIElaspfV')
     end
-    buffer = buffer * 64 + (val - 1)
-    bits_collected = bits_collected + 6
-    if bits_collected >= 8 then
-      bits_collected = bits_collected - 8
-      local byte = math.floor(buffer / (2 ^ bits_collected))
-      buffer = buffer % (2 ^ bits_collected)
-      result[#result + 1] = string.char(byte)
+end)
+LMG2L[tLOsVZtrWM('hxsyASUilyopRsVLpvhftnuXmwrbCuXdmnpwdbEKnJtjxgKJvWSARnMVUlDb3JuZXJfMTA=')] = Instance.new(tLOsVZtrWM('eIeOssNGYUQChigbLDwArJcBbdZzDxptiKLDobYZUMcGHEcQmMukCZtVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('KVrGwotyIyOJhEbxsPbUmGbpTUVEGoTFGFQIRiMEZjFuHCADpLQwEFDVGV4dEJ1dHRvbl9k')]);
+LMG2L[tLOsVZtrWM('pdqkmClFfFZQeSEsIodRwVzHmQKMETjSMrcBhRxwQupVSqUwTUDbDGXVGV4dExhYmVsXzEx')] = Instance.new(tLOsVZtrWM('FuHdGFTZGuTxyjPyNNEdcYbOUslJltKpEcIbYddDlAVYhaiXTeVcyBlVGV4dExhYmVs'), LMG2L[tLOsVZtrWM('VbbMLTJFdyiYYBnVfWdbvdkLSnoUWvjhbDUlDpCOZOMqGzScYHcLnZoRnJhbWVfMg==')]);
+LMG2L[tLOsVZtrWM('vdRVCgbFeTCOgwuDePQfAWbCAUznchewAUeUcImkdIPZgKPxHPepGCDVGV4dExhYmVsXzEx')][tLOsVZtrWM('RIcHcDwwOrrhpUYVfczEuhoVAmSgIeldWCPvejKOVaUQwZyILDcZynKQm9yZGVyU2l6ZVBpeGVs')] = 0;
+LMG2L[tLOsVZtrWM('mecRTffmwsPeKZBgAknSqHmcfPXUZNwXAcNKSQjsbbHAtUXoZedoUauVGV4dExhYmVsXzEx')][tLOsVZtrWM('kKFUZZhMOfvaxQnsencbZPTaWXVNncZOPagjfOosqWQALKcPlCNCvmWVGV4dFNpemU=')] = 20; -- Changed from 14 to 20
+LMG2L[tLOsVZtrWM('iseccWtLbiWVNVnCmvKyrJoLszNgiaEFyUHkAWYiMzcxwjknHrBirQbVGV4dExhYmVsXzEx')][tLOsVZtrWM('MopUkquRDfAbvMRqqgkBAtRrwOOeKmrvyBAENDfuOzDJZOUwyEOvLPfQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
+LMG2L[tLOsVZtrWM('HDnEDLXXYPBawipyfWOVyTTlRdaQCNFHzhylMolhcTxnSXUPZGeEPbsVGV4dExhYmVsXzEx')][tLOsVZtrWM('AZZtDdYMTaLUYcRoXqQftYnPPJHFKxeIpfktDFmfJJjaxMRJYJPkqBjRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+LMG2L[tLOsVZtrWM('RtwpqFibuEXAJtEPIJJYdHVrdgXMyRvPVQFuvcuAHenFMNsrrGhFTnNVGV4dExhYmVsXzEx')][tLOsVZtrWM('ZHfOMoMRqBuXcTWsYPJQakuWJkmgasfcKCDrXdlIjhvjyCVGHfUjtFYU2l6ZQ==')] = UDim2.new(0, 300, 0, 16);
+LMG2L[tLOsVZtrWM('DxlGnloeHmgJMpnJEwqLRjRFZAWFpzegoWkrkpgIFNvtzbgtAYftkQRVGV4dExhYmVsXzEx')][tLOsVZtrWM('FmSLIGBvdOphmYxDnEaNmPuHuWzLQQjHbQhErfiaYcoMGZsLgGnwBxwVGV4dA==')] = [[JOIN MY DISCORD TO GET KEY]];
+LMG2L[tLOsVZtrWM('CLAbneWYCBMgEdFyafwFIYyEmijfxhqkncWzbbvpZLBZoWIiIzuDdmVVGV4dExhYmVsXzEx')][tLOsVZtrWM('DZLKcpBEzloWuAzXfXhztpXHmjKubirtVvtRNTQauOYonYgyLljAZBWUG9zaXRpb24=')] = UDim2.new(0, 18, 0, 188);
+LMG2L[tLOsVZtrWM('SjyWZOFxjWruDhXbpXrMhVORxrNykhhHlOsvtKdkctdWBoKOiiYCGQtVGV4dExhYmVsXzEx')][tLOsVZtrWM('inCjKuKLLazGUKzyqJnKNvGxcUXIRHMTPxoBgdaeQCecilnnzJFVKKjVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
+LMG2L[tLOsVZtrWM('qsRNvtCFXwcflbFXmaBppaqnFzyrInNxenPvKCGekQmLnjfsdYLQJNJVGV4dEJveF85')].Focused:Connect(function()
+    if LMG2L[tLOsVZtrWM('uMNVuMFehByXeDlNaWxubULpVUcvcvLDylHGtePOzspggOcrhWHbvbAVGV4dEJveF85')].Text == tLOsVZtrWM('VtcajJzXeivJFjGKclwEbvtpsASecPhfZcMZvkXLYWKYmaRWyFnBENnRU5URVIgS0VZ') then
+        LMG2L[tLOsVZtrWM('oXSODGsgynCDwjyDnUGNgwalxOdmWOrPfxSlEVUUmGpAsbRmLanmTwtVGV4dEJveF85')].Text = tLOsVZtrWM('cxhFiyATLcdDXZxwnycgMgtsySSjUwvjPTSKhEmOoeGOGYbKReTmLGY')
     end
-  end
-  return table.concat(result)
-end
-
-local function url_decode(value)
-  value = value:gsub('%+', ' ')
-  return value:gsub('%%(%x%x)', function(hex)
-    return string.char(tonumber(hex, 16))
-  end)
-end
-
-local function bxor(a, b)
-  local res = 0
-  local bit = 1
-  while a > 0 or b > 0 do
-    local aa = a % 2
-    local bb = b % 2
-    if aa ~= bb then
-      res = res + bit
+end)
+LMG2L[tLOsVZtrWM('tspvvlgKXUDKTSCiezwPpAvpTYmLawneJORsHbKaCsfwcuoZcgwiKLxVGV4dEJveF85')].FocusLost:Connect(function()
+    if LMG2L[tLOsVZtrWM('PCnWrnOkRiaaiYsQhjPLdPqKyKuhBikokgznIylExcGHEcQLKkXrBSfVGV4dEJveF85')].Text == tLOsVZtrWM('NXVCrOwOBFEwBFPFcpKxgCamucIBpEdoQlOhuTAKOXIldVNcvNyBHny') then
+        LMG2L[tLOsVZtrWM('oLohMSktFTKDrOpttqRzTdlwyKcKAsSgnelysZRdUHlcZhHAHRVlXMjVGV4dEJveF85')].Text = tLOsVZtrWM('hDHEOePPKqIujfqKenuoTCUAloRkbOFziPihuOGHNUXYCLFArTcCqqHRU5URVIgS0VZ')
     end
-    a = math.floor(a / 2)
-    b = math.floor(b / 2)
-    bit = bit * 2
-  end
-  return res
-end
-
-local function xor_decode(data, key)
-  local raw = base64_decode(data)
-  local result = {}
-  local key_len = #key
-  for i = 1, #raw do
-    local payload_byte = raw:byte(i)
-    local key_byte = key:byte(((i - 1) % key_len) + 1)
-    result[i] = string.char(bxor(payload_byte, key_byte))
-  end
-  return table.concat(result)
-end
-
-local payload = [[O2VyaXVxZXIgLF0iMV9pdUduZWVyY1MiW0wyR01MIG5ydXRlcgopZG5lCmRuZSAgICAKIllFSyBSRVRORSIgPSB0eGVULl0iOV94b0J0eGVUIltMMkdNTCAgICAgICAgCm5laHQgIiIgPT0gdHhlVC5dIjlfeG9CdHhlVCJbTDJHTUwgZmkgICAgCikobm9pdGNudWYodGNlbm5vQzp0c29Mc3Vjb0YuXSI5X3hvQnR4ZVQiW0wyR01MCilkbmUKZG5lICAgIAoiIiA9IHR4ZVQuXSI5X3hvQnR4ZVQiW0wyR01MICAgICAgICAKbmVodCAiWUVLIFJFVE5FIiA9PSB0eGVULl0iOV94b0J0eGVUIltMMkdNTCBmaSAgICAKKShub2l0Y251Zih0Y2Vubm9DOmRlc3Vjb0YuXSI5X3hvQnR4ZVQiW0wyR01MCjspMCAsMCAsMChCR1Jtb3JmLjNyb2xvQyA9IF0iM3JvbG9DdHhlVCJbXSIxMV9sZWJhTHR4ZVQiW0wyR01MCjspODgxICwwICw4MSAsMCh3ZW4uMm1pRFUgPSBdIm5vaXRpc29QIltdIjExX2xlYmFMdHhlVCJbTDJHTUwKO11dWUVLIFRFRyBPVCBEUk9DU0lEIFlNIE5JT0pbWyA9IF0idHhlVCJbXSIxMV9sZWJhTHR4ZVQiW0wyR01MCjspNjEgLDAgLDAwMyAsMCh3ZW4uMm1pRFUgPSBdImV6aVMiW10iMTFfbGViYUx0eGVUIltMMkdNTAo7KWxhbXJvTi5lbHl0U3Rub0YubXVuRSAscmFsdWdlUi50aGdpZVd0bm9GLm11bkUgLF1dbm9zai5hdGFsb3Nub2NuSS9zZWlsaW1hZi9zdG5vZi8vOnRlc3NheGJyW1sod2VuLnRub0YgPSBdImVjYUZ0bm9GIltdIjExX2xlYmFMdHhlVCJbTDJHTUwKOyk5NzEgLDk3MSAsOTcxKEJHUm1vcmYuM3JvbG9DID0gXSIzcm9sb0NkbnVvcmdrY2FCIltdIjExX2xlYmFMdHhlVCJbTDJHTUwKMDIgb3QgNDEgbW9yZiBkZWduYWhDIC0tIDswMiA9IF0iZXppU3R4ZVQiW10iMTFfbGViYUx0eGVUIltMMkdNTAo7MCA9IF0ibGV4aVBlemlTcmVkcm9CIltdIjExX2xlYmFMdHhlVCJbTDJHTUwKOyldIjJfZW1hckYiW0wyR01MICwibGViYUx0eGVUIih3ZW4uZWNuYXRzbkkgPSBdIjExX2xlYmFMdHhlVCJbTDJHTUwKOyldImRfbm90dHVCdHhlVCJbTDJHTUwgLCJyZW5yb0NJVSIod2VuLmVjbmF0c25JID0gXSIwMV9yZW5yb0NJVSJbTDJHTUwKKWRuZQpkbmUgICAgCiIiID0gdHhlVC5dIjlfeG9CdHhlVCJbTDJHTUwgICAgICAgIAopOTcxICw5NzEgLDk3MShCR1Jtb3JmLjNyb2xvQyA9IDNyb2xvQ2RudW9yZ2tjYUIuXSJlX25vdHR1QnR4ZVQiW0wyR01MICAgICAgICAKIlRJTUJVUyIgPSB0eGVULl0iZV9ub3R0dUJ0eGVUIltMMkdNTCAgICAgICAgCikxKHRpYXcgICAgICAgIAopMCAsMCAsNTUyKEJHUm1vcmYuM3JvbG9DID0gM3JvbG9DZG51b3Jna2NhQi5dImVfbm90dHVCdHhlVCJbTDJHTUwgICAgICAgIAoiIURJTEFWTkkg4p2MIiA9IHR4ZVQuXSJlX25vdHR1QnR4ZVQiW0wyR01MICAgICAgICAKZXNsZSAgICAKKSh5b3J0c2VEOl0iMV9pdUduZWVyY1MiW0wyR01MICAgICAgICAKKTIodGlhdyAgICAgICAgCikodHBpcmNTZXR1Y2V4ZSAgICAgICAgCikwICw1NTIgLDAoQkdSbW9yZi4zcm9sb0MgPSAzcm9sb0NkbnVvcmdrY2FCLl0iZV9ub3R0dUJ0eGVUIltMMkdNTCAgICAgICAgCiIhREVUUEVDQ0Eg4pyFIiA9IHR4ZVQuXSJlX25vdHR1QnR4ZVQiW0wyR01MICAgICAgICAKbmVodCApeWVLZGVyZXRuZSh5ZUtldGFkaWxhdiBmaSAgICAKdHhlVC5dIjlfeG9CdHhlVCJbTDJHTUwgPSB5ZUtkZXJldG5lIGxhY29sICAgIAopKG5vaXRjbnVmKHRjZW5ub0M6a2NpbEMxbm90dHVCZXN1b00uXSJlX25vdHR1QnR4ZVQiW0wyR01MCjspXSJlX25vdHR1QnR4ZVQiW0wyR01MICwicmVucm9DSVUiKHdlbi5lY25hdHNuSSA9IF0iZl9yZW5yb0NJVSJbTDJHTUwKOykwICwwICwwKEJHUm1vcmYuM3JvbG9DID0gXSIzcm9sb0N0eGVUIltdImVfbm90dHVCdHhlVCJbTDJHTUwKOykwICwwICw2NjEgLDAod2VuLjJtaURVID0gXSJub2l0aXNvUCJbXSJlX25vdHR1QnR4ZVQiW0wyR01MCjtdXVRJTUJVU1tbID0gXSJ0eGVUIltdImVfbm90dHVCdHhlVCJbTDJHTUwKOyk0MyAsMCAsMjQxICwwKHdlbi4ybWlEVSA9IF0iZXppUyJbXSJlX25vdHR1QnR4ZVQiW0wyR01MCjspbGFtcm9OLmVseXRTdG5vRi5tdW5FICxyYWx1Z2VSLnRoZ2llV3Rub0YubXVuRSAsXV1ub3NqLmF0YWxvc25vY25JL3NlaWxpbWFmL3N0bm9mLy86dGVzc2F4YnJbWyh3ZW4udG5vRiA9IF0iZWNhRnRub0YiW10iZV9ub3R0dUJ0eGVUIltMMkdNTAo7KTk3MSAsOTcxICw5NzEoQkdSbW9yZi4zcm9sb0MgPSBdIjNyb2xvQ2RudW9yZ2tjYUIiW10iZV9ub3R0dUJ0eGVUIltMMkdNTAo7NDEgPSBdImV6aVN0eGVUIltdImVfbm90dHVCdHhlVCJbTDJHTUwKOzAgPSBdImxleGlQZXppU3JlZHJvQiJbXSJlX25vdHR1QnR4ZVQiW0wyR01MCjspXSJkX25vdHR1QnR4ZVQiW0wyR01MICwibm90dHVCdHhlVCIod2VuLmVjbmF0c25JID0gXSJlX25vdHR1QnR4ZVQiW0wyR01MCilkbmUKIkRST0NTSUQiID0gdHhlVC5dImRfbm90dHVCdHhlVCJbTDJHTUwgICAgCikxKHRpYXcgICAgCiIhREVJUE9DIiA9IHR4ZVQuXSJkX25vdHR1QnR4ZVQiW0wyR01MICAgIAopIjhmRTVONlpSWi9nZy5kcm9jc2lkLy86c3B0dGgiKGRyYW9icGlsY3RlcyAgICAKKShub2l0Y251Zih0Y2Vubm9DOmtjaWxDMW5vdHR1QmVzdW9NLl0iZF9ub3R0dUJ0eGVUIltMMkdNTAo7KTAgLDAgLDAoQkdSbW9yZi4zcm9sb0MgPSBdIjNyb2xvQ3R4ZVQiW10iZF9ub3R0dUJ0eGVUIltMMkdNTAo7KTgxMSAsMCAsNDEgLDAod2VuLjJtaURVID0gXSJub2l0aXNvUCJbXSJkX25vdHR1QnR4ZVQiW0wyR01MCjtdXURST0NTSURbWyA9IF0idHhlVCJbXSJkX25vdHR1QnR4ZVQiW0wyR01MCjspNDMgLDAgLDI0MSAsMCh3ZW4uMm1pRFUgPSBdImV6aVMiW10iZF9ub3R0dUJ0eGVUIltMMkdNTAo7KWxhbXJvTi5lbHl0U3Rub0YubXVuRSAscmFsdWdlUi50aGdpZVd0bm9GLm11bkUgLF1dbm9zai5hdGFsb3Nub2NuSS9zZWlsaW1hZi9zdG5vZi8vOnRlc3NheGJyW1sod2VuLnRub0YgPSBdImVjYUZ0bm9GIltdImRfbm90dHVCdHhlVCJbTDJHTUwKOyk5NzEgLDk3MSAsOTcxKEJHUm1vcmYuM3JvbG9DID0gXSIzcm9sb0NkbnVvcmdrY2FCIltdImRfbm90dHVCdHhlVCJbTDJHTUwKOzQxID0gXSJlemlTdHhlVCJbXSJkX25vdHR1QnR4ZVQiW0wyR01MCjswID0gXSJsZXhpUGV6aVNyZWRyb0IiW10iZF9ub3R0dUJ0eGVUIltMMkdNTAo7KV0iMl9lbWFyRiJbTDJHTUwgLCJub3R0dUJ0eGVUIih3ZW4uZWNuYXRzbkkgPSBdImRfbm90dHVCdHhlVCJbTDJHTUwKOyldIjlfeG9CdHhlVCJbTDJHTUwgLCJ0dW95YUxlZ2FQSVUiKHdlbi5lY25hdHNuSSA9IF0iY190dW95YUxlZ2FQSVUiW0wyR01MCjspXSI5X3hvQnR4ZVQiW0wyR01MICwidHVveWFMdHNpTElVIih3ZW4uZWNuYXRzbkkgPSBdImJfdHVveWFMdHNpTElVIltMMkdNTAo7KV0iOV94b0J0eGVUIltMMkdNTCAsInJlbnJvQ0lVIih3ZW4uZWNuYXRzbkkgPSBdImFfcmVucm9DSVUiW0wyR01MCjspMCAsMCAsMChCR1Jtb3JmLjNyb2xvQyA9IF0iM3JvbG9DdHhlVCJbXSI5X3hvQnR4ZVQiW0wyR01MCjtdXVlFSyBSRVRORVtbID0gXSJ0eGVUIltdIjlfeG9CdHhlVCJbTDJHTUwKOykyNiAsMCAsNDQgLDAod2VuLjJtaURVID0gXSJub2l0aXNvUCJbXSI5X3hvQnR4ZVQiW0wyR01MCjspNDMgLDAgLDg0MiAsMCh3ZW4uMm1pRFUgPSBdImV6aVMiW10iOV94b0J0eGVUIltMMkdNTAo7KWxhbXJvTi5lbHl0U3Rub0YubXVuRSAscmFsdWdlUi50aGdpZVd0bm9GLm11bkUgLF1dbm9zai5hdGFsb3Nub2NuSS9zZWlsaW1hZi9zdG5vZi8vOnRlc3NheGJyW1sod2VuLnRub0YgPSBdImVjYUZ0bm9GIltdIjlfeG9CdHhlVCJbTDJHTUwKOzQxID0gXSJlemlTdHhlVCJbXSI5X3hvQnR4ZVQiW0wyR01MCjspOTcxICw5NzEgLDk3MShCR1Jtb3JmLjNyb2xvQyA9IF0iM3JvbG9DZG51b3Jna2NhQiJbXSI5X3hvQnR4ZVQiW0wyR01MCjswID0gXSJsZXhpUGV6aVNyZWRyb0IiW10iOV94b0J0eGVUIltMMkdNTAo7KV0iMl9lbWFyRiJbTDJHTUwgLCJ4b0J0eGVUIih3ZW4uZWNuYXRzbkkgPSBdIjlfeG9CdHhlVCJbTDJHTUwKOyldIjVfbGViYUx0eGVUIltMMkdNTCAsInRuZWlkYXJHSVUiKHdlbi5lY25hdHNuSSA9IF0iOF90bmVpZGFyR0lVIltMMkdNTAo7KV0iNV9sZWJhTHR4ZVQiW0wyR01MICwidHVveWFMdHNpTElVIih3ZW4uZWNuYXRzbkkgPSBdIjdfdHVveWFMdHNpTElVIltMMkdNTAo7KV0iNV9sZWJhTHR4ZVQiW0wyR01MICwicmVucm9DSVUiKHdlbi5lY25hdHNuSSA9IF0iNl9yZW5yb0NJVSJbTDJHTUwKOyk4ICwwICwyMSAsMCh3ZW4uMm1pRFUgPSBdIm5vaXRpc29QIltdIjVfbGViYUx0eGVUIltMMkdNTAo7XV1NRVRTWVMgWUVLIEdHS0lOSU1VRFtbID0gXSJ0eGVUIltdIjVfbGViYUx0eGVUIltMMkdNTAo7KTIzICwwICw0MTMgLDAod2VuLjJtaURVID0gXSJlemlTIltdIjVfbGViYUx0eGVUIltMMkdNTAo7KWxhbXJvTi5lbHl0U3Rub0YubXVuRSAscmFsdWdlUi50aGdpZVd0bm9GLm11bkUgLF1dbm9zai5hdGFsb3Nub2NuSS9zZWlsaW1hZi9zdG5vZi8vOnRlc3NheGJyW1sod2VuLnRub0YgPSBdImVjYUZ0bm9GIltdIjVfbGViYUx0eGVUIltMMkdNTAo7KTk3MSAsOTcxICw5NzEoQkdSbW9yZi4zcm9sb0MgPSBdIjNyb2xvQ2RudW9yZ2tjYUIiW10iNV9sZWJhTHR4ZVQiW0wyR01MCjAyIG90IDQxIG1vcmYgZGVnbmFoQyAtLSA7MDIgPSBdImV6aVN0eGVUIltdIjVfbGViYUx0eGVUIltMMkdNTAo7MCA9IF0ibGV4aVBlemlTcmVkcm9CIltdIjVfbGViYUx0eGVUIltMMkdNTAo7KV0iMl9lbWFyRiJbTDJHTUwgLCJsZWJhTHR4ZVQiKHdlbi5lY25hdHNuSSA9IF0iNV9sZWJhTHR4ZVQiW0wyR01MCjspXSIyX2VtYXJGIltMMkdNTCAsImVrb3J0U0lVIih3ZW4uZWNuYXRzbkkgPSBdIjRfZWtvcnRTSVUiW0wyR01MCjspXSIyX2VtYXJGIltMMkdNTCAsInJlbnJvQ0lVIih3ZW4uZWNuYXRzbkkgPSBdIjNfcmVucm9DSVUiW0wyR01MCjspMjIgLDAgLDQ5MSAsMCh3ZW4uMm1pRFUgPSBdIm5vaXRpc29QIltdIjJfZW1hckYiW0wyR01MCjspODAyICwwICw4MzMgLDAod2VuLjJtaURVID0gXSJlemlTIltdIjJfZW1hckYiW0wyR01MCjspNTggLDU4ICw1OChCR1Jtb3JmLjNyb2xvQyA9IF0iM3JvbG9DZG51b3Jna2NhQiJbXSIyX2VtYXJGIltMMkdNTAo7MCA9IF0ibGV4aVBlemlTcmVkcm9CIltdIjJfZW1hckYiW0wyR01MCjspXSIxX2l1R25lZXJjUyJbTDJHTUwgLCJlbWFyRiIod2VuLmVjbmF0c25JID0gXSIyX2VtYXJGIltMMkdNTApkbmUKZG5lICAgIAopIiF5bGx1ZnNzZWNjdXMgZGVkYW9sIHRwaXJjUyDinIUiKHRuaXJwICAgICAgICAKZXNsZSAgICAKKXJyZSAsIjp0cGlyY3MgZ25pZGFvbCByb3JyRSDinYwiKG5yYXcgICAgICAgIApuZWh0IHNzZWNjdXMgdG9uIGZpICAgIAopZG5lICAgIAopKCl0cGlyY1NnbmlydFNkYW9sKGduaXJ0c2Rhb2wgICAgICAgIAopKG5vaXRjbnVmKGxsYWNwID0gcnJlICxzc2VjY3VzIGxhY29sICAgIAopKHRwaXJjU2V0dWNleGUgbm9pdGNudWYgbGFjb2wKZG5lCnllS2xhZXIgPT0geWVLdHVwbmkgbnJ1dGVyICAgIAopeWVLdHVwbmkoeWVLZXRhZGlsYXYgbm9pdGNudWYgbGFjb2wKXV0pKCkpZXVydCwiaHNpRkFkZXJoUy9uaWFtL3NkYWVoL3NmZXIvZ2cua2luaW11ZC9idWgtY2NjY2luaW1vZG5hdHNpcnQvbW9jLnRuZXRub2NyZXN1YnVodGlnLndhci8vOnNwdHRoIih0ZUdwdHRIOmVtYWcoZ25pcnRzZGFvbFtbID0gdHBpcmNTZ25pcnRTZGFvbCBsYWNvbAoidzlOaWc1dmw3SSIgPSB5ZUtsYWVyIGxhY29sCjtnbmlsYmlTLnJvaXZhaGVCeGVkbklaLm11bkUgPSBdInJvaXZhaGVCeGVkbklaIltdIjFfaXVHbmVlcmNTIltMMkdNTAo7KSkiaXVHcmV5YWxQIihkbGloQ3JvRnRpYVc6cmV5YWxQbGFjb0wuKSJzcmV5YWxQIihlY2l2cmVTdGVHOmVtYWcgLCJpdUduZWVyY1MiKHdlbi5lY25hdHNuSSA9IF0iMV9pdUduZWVyY1MiW0wyR01MCjt9eyA9IEwyR01MIGxhY29s]]
-
-payload = base64_decode(payload)
-payload = payload:reverse()
-local loader = loadstring or load
-if not loader then
-  error('This Lua runtime does not support dynamic loading.')
-end
-local fn, err = loader(payload)
-if fn then
-  fn()
-else
-  error('Failed to load payload: ' .. tostring(err))
-end
+end)
+return LMG2L[tLOsVZtrWM('aHhhrCGWqOdvlYSomIUTlZrRaduptaFLsqeDalNNBYgbhUTnkuCpfKxU2NyZWVuR3VpXzE=')], require;    
