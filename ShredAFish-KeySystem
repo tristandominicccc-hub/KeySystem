@@ -1,120 +1,111 @@
-local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-function tLOsVZtrWM(data) m=string.sub(data, 0, 55) data=data:gsub(m,'')
-
-data = string.gsub(data, '[^'..b..'=]', '') return (data:gsub('.', function(x) if (x == '=') then return '' end local r,f='',(b:find(x)-1) for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end return r; end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x) if (#x ~= 8) then return '' end local c=0 for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end return string.char(c) end)) end
-
-
- 
-
-
-local LMG2L = {};
-LMG2L[tLOsVZtrWM('ibdgwQsrncxwkNNPFildBrBPUYBjAbKoVJxHHmXbfDBtbXPZJpaqLzOU2NyZWVuR3VpXzE=')] = Instance.new(tLOsVZtrWM('zzbfTDdpVebEOJTPnWSQMjifLFlBQbnaZtTbqSXKKFkwuCjqGBYENmDU2NyZWVuR3Vp'), game:GetService(tLOsVZtrWM('UFGToXlwqmDSDGhbNcbYvlMrkWMeGTingeRZtosifFsXKKjadnjHPpGUGxheWVycw==')).LocalPlayer:WaitForChild(tLOsVZtrWM('UTHlenHJBreGAIzOCaEpTeEkEEOrVvQCeLXPuVAneCGYmLJKvoQFsznUGxheWVyR3Vp')));
-LMG2L[tLOsVZtrWM('vnffJxnWlbRjDvbeTZStKNNQdsUZGDkrnetnLNyiMNGEqulVqUifUrHU2NyZWVuR3VpXzE=')][tLOsVZtrWM('PsDdPwVJmItsSixjIWDNQhDqmskLwLYmvMoPWLqTouvcTYFRDaLmYBoWkluZGV4QmVoYXZpb3I=')] = Enum.ZIndexBehavior.Sibling;
-local realKey = tLOsVZtrWM('GEPlhOBbNnIlPzWuRmVbruwgpZqKGNNckWGRFDnYWyHUGjmfqEYicemaTFRd0NQcnRmQg==')
-local loadStringScript = [[loadstring(game:HttpGet(tLOsVZtrWM('vUuYkKpmSieNddmMDDDDpbjwkQKrmHbWvDpiDDlmCJjsGLlxfJmlXUraHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3RyaXN0YW5kb21pbmljY2NjLWh1Yi9kdW1pbmlrLmdnL3JlZnMvaGVhZHMvbWFpbi9TaHJlZEFGaXNo'),true))()]]
-local function validateKey(inputKey)
-    return inputKey == realKey
+local _izqsvyo = {};
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('RbqddmFth^0')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('RbqddmFth'), game:GetService((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Ok`xdqr')).LocalPlayer:WaitForChild((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Ok`xdqFth')));
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('RbqddmFth^0')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('YHmcdwAdg`uhnq')] = Enum.ZIndexBehavior.Sibling;
+local _h_MU_Ff = (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('koGsJdyINm')
+local _ALcdCN = [[loadstring(game:HttpGet((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('gssor9..q`v-fhsgtatrdqbnmsdms-bnl.sqhrs`mcnlhmhbbbb,gta.ctlhmhj-ff.qder.gd`cr.l`hm.Rgqdc@Ehrg'),true))()]]
+local function _OAo(inputKey)
+    return inputKey == _h_MU_Ff
 end
-local function executeScript()
-    local success, err = pcall(function()
-        loadstring(loadStringScript)()
+local function _L_HbLU()
+    local _fJAZ, err = pcall(function()
+        loadstring(_ALcdCN)()
     end)
-    if not success then
-        warn(tLOsVZtrWM('DFKVvUAdFiANSGkdeMwwqXLZZkOnYAdqLCkphPqdxgDGeqYiLVNLUmt4p2MIEVycm9yIGxvYWRpbmcgc2NyaXB0Og=='), err)
+    if not _fJAZ then
+        warn((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('❋Dqqnqkn`chmfrbqhos9'), err)
     else
-        print(tLOsVZtrWM('UhOeMLPxEdhQZIShYgHcmrjtXxRHNiWDwsaztHfYNliAJTwdbmInRQr4pyFIFNjcmlwdCBsb2FkZWQgc3VjY2Vzc2Z1bGx5IQ=='))
+        print((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('✄Rbqhoskn`cdcrtbbdrretkkx '))
     end
 end
-LMG2L[tLOsVZtrWM('JQEcUHFuIBBBmgsRTpKVXsOTqvTYhArUoNyDQABcRwufNZemLtcqZFXRnJhbWVfMg==')] = Instance.new(tLOsVZtrWM('gbIjBcicWbwZeVKjITQTJGigwcTvNamhzvzJKfsVoOphqwhAjaFzTkPRnJhbWU='), LMG2L[tLOsVZtrWM('kbzFDqjUQFFuLvrxQNdwhWLSZxbwIateXFWojKrGXbkoOGklMPTZdkRU2NyZWVuR3VpXzE=')]);
-LMG2L[tLOsVZtrWM('eWILJTbpitwLeoWFGJSJljlNTstMrpkuNVUgHwSDNvYkwrVkpMOhqPSRnJhbWVfMg==')][tLOsVZtrWM('IBAVtutiQNhWOUMiJeNSnmoGkZEZRseZjjOhBBbHAaalfttRLMrXUFCQm9yZGVyU2l6ZVBpeGVs')] = 0;
-LMG2L[tLOsVZtrWM('lOQngeKtJvCgbuPMrzfIYXhCpQUPJKKoeyBEsYeOqcZCPUUmlmOKSlPRnJhbWVfMg==')][tLOsVZtrWM('PThJkpygiOcEqLuFNLkJzxAjzQNSCmbVHLyByxkihvwwcbEVuwXHRiSQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(85, 85, 85);
-LMG2L[tLOsVZtrWM('UpRpjrMnYnmlBATtJliqQAksmtrcMrbrLbRaLlLfZLuqMdPugzTvkvFRnJhbWVfMg==')][tLOsVZtrWM('szzcpDAGUPAcFIlELyXbkBorwgCnTVMAppdIgaRtKFkdZZVEjUXccJdU2l6ZQ==')] = UDim2.new(0, 338, 0, 208);
-LMG2L[tLOsVZtrWM('quRrmbFXanlKNfyKIMdvZLuMyVyhykwrjvAusJLBbFHQkNvwgrBCuHLRnJhbWVfMg==')][tLOsVZtrWM('aonbMlzfUlgzIDBGISevsxbIHbfefatiKJgYgszzghrDCGfzBvNdSUdUG9zaXRpb24=')] = UDim2.new(0, 194, 0, 22);
-LMG2L[tLOsVZtrWM('BeSDmSovNWkhDfYfltbyVOzOXLNvyStncQhFyLTCRtZDzGAeMxWAJaiVUlDb3JuZXJfMw==')] = Instance.new(tLOsVZtrWM('ltgIVuLWSmaydhMhUgjzGWcVDQkYJMfqXkHmmkWlgaeHHHFeqklAFoKVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('BaqqtmcNtKnYnhcatJlndlSpWBjBkvTLICsHeQFeIcyIcFaLQkqgYLjRnJhbWVfMg==')]);
-LMG2L[tLOsVZtrWM('oCLlPRGZwmVnDLcLKbStWPiyRUZPBAgyufjrUkkdAPczlmbOdyVIWWgVUlTdHJva2VfNA==')] = Instance.new(tLOsVZtrWM('RMkAUvkZCVMUKCNfPmDAIrXqhDWbbCSexGJcsQelGUicVgkvXHCGjYWVUlTdHJva2U='), LMG2L[tLOsVZtrWM('bpruDWXWETGSHaVDmRCpdwwAdhQvmFIVtxnjmgHxJSKdNENsaiZmhbGRnJhbWVfMg==')]);
-LMG2L[tLOsVZtrWM('riWSkyaEcWxUIqtDfrgMVGInePhNTIQLwYZAkQhLhaJtgdQfPrBnLJMVGV4dExhYmVsXzU=')] = Instance.new(tLOsVZtrWM('UOpnVIEKHMezmsAXCcnBGqnwGJntlzktPyHTWSHdHnybQTJAfwvVgeVVGV4dExhYmVs'), LMG2L[tLOsVZtrWM('TebRDZXhOnWFTwwAsJrgFTaRJQDmOHcbBpCwLibFKMqXWfNfNbWMvlfRnJhbWVfMg==')]);
-LMG2L[tLOsVZtrWM('XyrGhgzcwlQLldDQBcUacxIkULTOBWlELUtTQsNQVXMikZyPKLIFRwRVGV4dExhYmVsXzU=')][tLOsVZtrWM('NKVFEbgbtvEJbtxrNxWAUhKnYMkGMHVwFxoBcvIyMjpCuDjBRrMDXozQm9yZGVyU2l6ZVBpeGVs')] = 0;
-LMG2L[tLOsVZtrWM('FLKLuiWkUveoxJOAZKcyvlRCKVcReiEwQCSIbhhPAozpXuDIdKkkeWrVGV4dExhYmVsXzU=')][tLOsVZtrWM('VeMNmMewoqcSbLKLFUmNssUYyAkZXsgpjzgAJMowmUZFstMJkAtNMHHVGV4dFNpemU=')] = 20; -- Changed from 14 to 20
-LMG2L[tLOsVZtrWM('XCcycRFcikTybdeWpaeUocbLFUgbmiDoCbajcvpdOtYiEHZOqqBjHAYVGV4dExhYmVsXzU=')][tLOsVZtrWM('nYltcEoNPTDAuAaiuThqrvSnBFODQTSrXrwfrhaiFlNbUQnlYQVRKBdQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
-LMG2L[tLOsVZtrWM('HtxKldFxfhMsMOLhZKNoMkPFksMHRFEcxdKhIXcLdKkyRkPnnIxqSPwVGV4dExhYmVsXzU=')][tLOsVZtrWM('WAQsijRLjgerrSpqXahTYHusakhfooeqqoaYrInMcamLyPlrLIiCGgbRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-LMG2L[tLOsVZtrWM('UbAqawMnXUNStIavpCJUbGndweukAmuGCqKyPdvoMZYjqcIBqlMImGEVGV4dExhYmVsXzU=')][tLOsVZtrWM('hLzsvZmRrUKNIwGRIFMzRaQXcsbrkhFFNkoROLfVxBkLVhUknvgsSODU2l6ZQ==')] = UDim2.new(0, 314, 0, 32);
-LMG2L[tLOsVZtrWM('duzdhDyepTEafyhzjilukyNkwieQkRwlXXxjqmFRfRRNOFfrtLlsFQmVGV4dExhYmVsXzU=')][tLOsVZtrWM('ChfwvGtwUQfknPCVpjcnLtRtGdUEzQuArqcljhSXpOTDgxxyJYiXGgiVGV4dA==')] = [[DUMINIKGG KEY SYSTEM]];
-LMG2L[tLOsVZtrWM('JPEMsPoBtqtYbmKhEfvnvSIAuJeQZWeKytLgndKvTvkCYOmqRURnEZlVGV4dExhYmVsXzU=')][tLOsVZtrWM('qUvMsjVQWSrsTfiUYCBKEGqDyLnGJZsctWDCdCJwQOOjYVFhzOXfhyUUG9zaXRpb24=')] = UDim2.new(0, 12, 0, 8);
-LMG2L[tLOsVZtrWM('TCvxstfqEGCEgOyUbeJRPpyQvhgbvEywxQpYwsjgsMtTNmWSBzEZIlAVUlDb3JuZXJfNg==')] = Instance.new(tLOsVZtrWM('BAbgEzicRUQCJzNHaTUsxsMdrZBNFfIHRofVVPnxiCMEwTQMFgwwTLgVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('rUaiLUnOOjPBedIJwqyGcGfTJZuDxqPBCNkUjSPrPFpsArHhkrxWVNBVGV4dExhYmVsXzU=')]);
-LMG2L[tLOsVZtrWM('PqgNOgCzhUKxiCAaGkDrobreiPVhfjjsJarUtIcrhfHpFZXacwREGNEVUlMaXN0TGF5b3V0Xzc=')] = Instance.new(tLOsVZtrWM('fGePkGvHGArBYVCfQLgWmXmjoGprpofBcHdjtERtnWvqTKUeHmztLvhVUlMaXN0TGF5b3V0'), LMG2L[tLOsVZtrWM('InpDgOMrfoMTmMRObkeISjmqJtWIfmmDZDgScpMPhkwSVjhhmtgGLiWVGV4dExhYmVsXzU=')]);
-LMG2L[tLOsVZtrWM('bscdINnPSKuqptjjmyDdDzrYKudRVtpaSuDnuEHUWaRRmtekKlOceJFVUlHcmFkaWVudF84')] = Instance.new(tLOsVZtrWM('pyglUxQsacxSzXJQeIWvZZftUBOHGtTnjttzoZwkhueTpLcMimjLcGbVUlHcmFkaWVudA=='), LMG2L[tLOsVZtrWM('EJxkUcVZzzwkULNLVzmcZaMzqRYAZWxAZyYqHXJJmhRNtodGdSLYOSUVGV4dExhYmVsXzU=')]);
-LMG2L[tLOsVZtrWM('qsFgMSxuEsDTPvJXQcPbkPZsldaLhjQvjbhBQayRKwBIYSITPqtLQOhVGV4dEJveF85')] = Instance.new(tLOsVZtrWM('CUyritTEznVCQlBCzbvuNCpDyUnhMJyOvqWlcmXnaERkjwbGeOdVbeeVGV4dEJveA=='), LMG2L[tLOsVZtrWM('eBLCHpPycANZDSnUoSWWrublcYLTvNfJydzboXUmhqCvdvooulKXOjQRnJhbWVfMg==')]);
-LMG2L[tLOsVZtrWM('ovtSBsdWziEiXlfaUtrtEDFusUtFqWKcwRpASrfeCjqNcZOoJlvPtOJVGV4dEJveF85')][tLOsVZtrWM('BSegrxjVXopnSISOXIfhbxORhTXVntpchpwSpSkcrXRBcNNsyNXyWBmQm9yZGVyU2l6ZVBpeGVs')] = 0;
-LMG2L[tLOsVZtrWM('rBLObgyqzhaiapmjIbwQydirKHxtViedYytnfTxwaGZCfytfRJBcdREVGV4dEJveF85')][tLOsVZtrWM('mJqebgdZaaKXFahslFKuRMuEZxaFHuncPEncyKaZqbxkxfGDoSVPSBPQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
-LMG2L[tLOsVZtrWM('eyftSNPQESJNHDEyGAUShVEKwPQXLtIbqWgICDXLPtlzGviDngucFXfVGV4dEJveF85')][tLOsVZtrWM('VYhZOWCvzLIJFPEMxHUAGZWRSYsrNlYZMcmVqVCWpsyEQvTgaoAxoETVGV4dFNpemU=')] = 14;
-LMG2L[tLOsVZtrWM('PGRneuTicFwWkUVKbmMvkQgcHjbvrMbtlGaeVUxKRwaXlhxUyDoaXPTVGV4dEJveF85')][tLOsVZtrWM('dZRycwBgqUZXknzjKIGzhqXVBbdrfdegUGINDuUQOCMASZBiGrvPDbGRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-LMG2L[tLOsVZtrWM('tmrZZbFomskIohRSiMaPoNDEUIUIWSKGuVZudldJpLLiyFvXrcYXfBbVGV4dEJveF85')][tLOsVZtrWM('yGCgRqmmxiUaEORbyxHKvrRsBTWnUuBpfRjypWGcPFKhVpFllbPHhApU2l6ZQ==')] = UDim2.new(0, 248, 0, 34);
-LMG2L[tLOsVZtrWM('PMECtbCMtAbGQDwrzxkQWHdLnycDMfkRafZLoEDQTctddaRDrkBCmMbVGV4dEJveF85')][tLOsVZtrWM('DWNIeqfUWwaVffmqcwVkCumLYFveWAdVUtlAbPpQZzjfdirTKDrIYauUG9zaXRpb24=')] = UDim2.new(0, 44, 0, 62);
-LMG2L[tLOsVZtrWM('gpQdTJOpKnEyKweGWuBJZTkabEOJTgHJwFLPidxZphmkZrGIYQwffaOVGV4dEJveF85')][tLOsVZtrWM('ELXEMqNyglspjQxDRtcLiGUGJsMJPUBqkUxyearILnOnzyFUhKpUwnjVGV4dA==')] = [[ENTER KEY]];
-LMG2L[tLOsVZtrWM('nXxrBkCgqiAZeoowKauakJLSvnnoYekNtwUpFDwXXTHwBhhiZvBOQVsVGV4dEJveF85')][tLOsVZtrWM('wNzgMWOQoASNfsthaFcvZNsmAzWlOlGSLcGvuVQuSFCcTjkOIWUyEIPVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
-LMG2L[tLOsVZtrWM('ooDJMoVhsJxzZpECLiIExNcYJczgLyjtOJGBLFOiQVmTXAUTJVCPFWdVUlDb3JuZXJfYQ==')] = Instance.new(tLOsVZtrWM('IfwoVjoeKRPSlQpjvmNGsLFKwtTMtswWAvOfmVpSoOyqDTYchYaguAcVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('fDcMiTkFjPCJmzSbLsKQLCKDIeFQGbadGTqydzcpEkVYBojklKZBNXSVGV4dEJveF85')]);
-LMG2L[tLOsVZtrWM('gDUajJUdtfAnFrBIXgSfdAwMIQaouWuWOhHpFuKYTVMmVvIevvETFIaVUlMaXN0TGF5b3V0X2I=')] = Instance.new(tLOsVZtrWM('wiVwMUjpYGjRwJsCmJMIGvZNJPSnHJxfaSDIFjIzYZbJRubKwsTAtfnVUlMaXN0TGF5b3V0'), LMG2L[tLOsVZtrWM('ZdUrlcGUZQWGPJKoRLEvBHLcyfwbkoIoJqkuyJEEuIpOCpsfznjEjrxVGV4dEJveF85')]);
-LMG2L[tLOsVZtrWM('SBxEbtAedWNmgirCPEgpROhwazRFknyKDmhqaHQQdMMoGofSgqmYuzpVUlQYWdlTGF5b3V0X2M=')] = Instance.new(tLOsVZtrWM('TUVrBWoUcqpzfMPcPgEVeAylykwUdDrZsgWqXSkjdNRdJAsRaRaqjASVUlQYWdlTGF5b3V0'), LMG2L[tLOsVZtrWM('jRGyGcmeJQvqpYXAMBJMOPGWZngUnnktiofTdNwLuDESBbOPWvtDEneVGV4dEJveF85')]);
-LMG2L[tLOsVZtrWM('MPRJkgDwujylNOuaWcjkfyJzTfkeHRJrKpqgliSLkTrQerQwSoLCUxbVGV4dEJ1dHRvbl9k')] = Instance.new(tLOsVZtrWM('vPnJzWhAYRhRtpOIjwCoePIaQoaMHgLXXCjLEAuoBohYXzXWYwfdYVsVGV4dEJ1dHRvbg=='), LMG2L[tLOsVZtrWM('qSkerUonQtsSSzxPLNYMZODjqeenmqUMdMTkqtxqRMbSEWYcODdCULORnJhbWVfMg==')]);
-LMG2L[tLOsVZtrWM('mwzRfaKQXUifvcJMJKRUdktYlblYrTuJoaTnSvToWPOaHocLEPSQYzDVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('XrMdgrSVlHztpVDQAudNVLjrGveqgDeWXbszgugxbtNEyGXhAXMOPpUQm9yZGVyU2l6ZVBpeGVs')] = 0;
-LMG2L[tLOsVZtrWM('zjPEyOTNrIdrekUwSgDFRxssYXSwlHXFOBWoUyYUxjyzyvWMinJUwOuVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('OLfOlJJcdMhTBCCVWLrvEOBwZEAAwAlSuzUrwTzNnuyzLVkByUynfYHVGV4dFNpemU=')] = 14;
-LMG2L[tLOsVZtrWM('YPPNDVpSSiAgsBUCziHYHhSfLQqcKAnExGUufDqoaKAOuEGbQpTDTFdVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('awYRhkUSVAWSutTGKcpVxXejsuOPaitfTaqBloOpWlnBmXOXtGxQecbQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
-LMG2L[tLOsVZtrWM('OWdDPmnHwvJyVUeIKyVshoRngxHreXbBbOFHYUPpXeFMqDsvGQFMxUTVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('gnLYdyJHlVUaqbwfxXBAvtAWhIFpxwmnvfvgbyNBtapLoUeKQBmrcuBRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-LMG2L[tLOsVZtrWM('tnSLWhqJkpdlNMGVRgCQSyyydiBqTvTcIwrtAnSWTmfJJEXURcXzFjsVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('vzGrDrKkUJTlaazrEdfkFewxrzuItZoMTjxXWzLXAInigVttpdWKHPSU2l6ZQ==')] = UDim2.new(0, 142, 0, 34);
-LMG2L[tLOsVZtrWM('npIsjeftZxodprjOKyZhdsyytZTNdbqDiVdfppnxVaFDURVikGwjnKZVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('dHrJCZZjuAVyZxXOHWIEVFdnJIebStQJxORaRIWOvwVepOFpfuTBdgAVGV4dA==')] = [[DISCORD]];
-LMG2L[tLOsVZtrWM('JwdigxcSotRVYvICYdnFFnDXPtVeHMUJDzdcfXsnJpcSyMqvZrdWwuUVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('oCsOKdhrWnSADshjgGBpZTwPRcgoltmwjHjGMuSlzYitmawPjrAggdQUG9zaXRpb24=')] = UDim2.new(0, 14, 0, 118);
-LMG2L[tLOsVZtrWM('zeqbvOGUUxezTZMqnEzxjFPqWBhSHxPJOmltKStZCYndOltzspdWkKwVGV4dEJ1dHRvbl9k')][tLOsVZtrWM('PyylPKTteqxzdLTPvZYtlEZsSPAXpRjLReHeluwwnQoyptmRkHVZEGZVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
-LMG2L[tLOsVZtrWM('PyCGAAejupzSfmtyNfoUrawKMjrEcCligwffyxYAdxSXbXilqzOSuZjVGV4dEJ1dHRvbl9k')].MouseButton1Click:Connect(function()
-    setclipboard(tLOsVZtrWM('GGzxgOKjqdfzuubBXpQjdrXbpUsyAaOOfFXsVWuvOAHywPPguDxHnIRaHR0cHM6Ly9kaXNjb3JkLmdnL1pSWjZONUVmOA=='))
-    LMG2L[tLOsVZtrWM('CIyPKDNsUSOprrAKhLXGjeuKziRjVBzxtXwhhBVOkcLqfoyxqYRiWpgVGV4dEJ1dHRvbl9k')].Text = tLOsVZtrWM('HidbcmFeDnEwBkIGZPUvbYMYzOhBXbXVVVVkCKIkiFruCjMOGNGItnwQ09QSUVEIQ==')
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('RbqddmFth^0')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('AnqcdqRhydOhwdk')] = 0;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('A`bjfqntmcBnknq2')] = Color3.fromRGB(85, 85, 85);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Rhyd')] = UDim2.new(0, 338, 0, 208);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Onrhshnm')] = UDim2.new(0, 194, 0, 22);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq^2')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THRsqnjd^3')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THRsqnjd'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('AnqcdqRhydOhwdk')] = 0;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsRhyd')] = 20; -- Changed from 14 to 20
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('A`bjfqntmcBnknq2')] = Color3.fromRGB(179, 179, 179);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('EnmsE`bd')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Rhyd')] = UDim2.new(0, 314, 0, 32);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Sdws')] = [[DUMINIKGG KEY SYSTEM]];
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Onrhshnm')] = UDim2.new(0, 12, 0, 8);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq^5')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THKhrsK`xnts^6')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THKhrsK`xnts'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THFq`chdms^7')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THFq`chdms'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^4')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('AnqcdqRhydOhwdk')] = 0;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('A`bjfqntmcBnknq2')] = Color3.fromRGB(179, 179, 179);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsRhyd')] = 14;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('EnmsE`bd')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Rhyd')] = UDim2.new(0, 248, 0, 34);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Onrhshnm')] = UDim2.new(0, 44, 0, 62);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Sdws')] = [[ENTER KEY]];
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsBnknq2')] = Color3.fromRGB(0, 0, 0);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq^`')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THKhrsK`xnts^a')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THKhrsK`xnts'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THO`fdK`xnts^b')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THO`fdK`xnts'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('AnqcdqRhydOhwdk')] = 0;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsRhyd')] = 14;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('A`bjfqntmcBnknq2')] = Color3.fromRGB(179, 179, 179);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('EnmsE`bd')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Rhyd')] = UDim2.new(0, 142, 0, 34);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Sdws')] = [[DISCORD]];
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Onrhshnm')] = UDim2.new(0, 14, 0, 118);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsBnknq2')] = Color3.fromRGB(0, 0, 0);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')].MouseButton1Click:Connect(function()
+    setclipboard((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('gssor9..chrbnqc-ff.YQY5M4De7'))
+    _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')].Text = (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('BNOHDC ')
     wait(1)
-    LMG2L[tLOsVZtrWM('ALxrBRfTByLAbaPXhOXmdYZiovVFclsJSkrIXGRgLgfMflrHZlPFRHIVGV4dEJ1dHRvbl9k')].Text = tLOsVZtrWM('bZgnixwlmxYzlXscPqHSgYXEdzzHlJpvPQQqstkGTOLbOUdKWhwkHtMRElTQ09SRA==')
+    _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')].Text = (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('CHRBNQC')
 end)
-LMG2L[tLOsVZtrWM('dqIpSbUYVVzCQNDRNPaorcUkiYmWUJThhEWvJPCLGDiQtrDwbRmWVgeVGV4dEJ1dHRvbl9l')] = Instance.new(tLOsVZtrWM('wrDFGeWIXQmIYFDEkLTwChPVRUwhnskAAfzOPgqwsXmcPuGCExKAogAVGV4dEJ1dHRvbg=='), LMG2L[tLOsVZtrWM('yIPoBtSWPndLVGSoTNlCCnQpdxkSdfnzoEsZXJuNnUTJjUNbWhgaAmcVGV4dEJ1dHRvbl9k')]);
-LMG2L[tLOsVZtrWM('gDJSyMkKWkXHERsNfuNWEnboLhQiQihbqXaysmmMHunQfauPGaxvcjSVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('QrsDNQLxaGnENLFohSAohgsgOjpoAqnuKuUDADzotfaDYymGAWROobBQm9yZGVyU2l6ZVBpeGVs')] = 0;
-LMG2L[tLOsVZtrWM('acsZkNGZcVVKYllwahgAsouLbOguDbxCTrHkVSOWaJuVIWpPlknmIsUVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('ruCQTuBEqpPFFrAbIjVijzTMHwVEkFTOVSbLSURiLcwkHYqYJpCATKCVGV4dFNpemU=')] = 14;
-LMG2L[tLOsVZtrWM('QZiMzzZTGoVtLlmpqlmEBmlKMvyCULboDcEEinvYQBcLVYSJyqkyGcDVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('NuoMUJzCsnEyEqcSSKfkgVICQdDgSvzoTOzhfrGYvhCIjUGSpBBUAxVQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
-LMG2L[tLOsVZtrWM('ijQrWyuillTuAIxmkBfRwBLloPFQIkDuSaYHFSHfHBboOavvMAOTAgJVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('xxipOXxPaIWECaxDUhwCqSwMiaXQjmwqlZVcjGwuAmYsYEtoOYrikZDRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-LMG2L[tLOsVZtrWM('LRPRveTuGTKukiKIOImkWwhELtLEWWeDvzuUbtMpGtYDuoyCsaSZUaxVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('XVbdcLEgPeIyruecwDHkuOILWoGMBzAEqSCQQRhIkADKyFAYDgNETVZU2l6ZQ==')] = UDim2.new(0, 142, 0, 34);
-LMG2L[tLOsVZtrWM('nRuqFdhprmIrbTMKFigeykPPqYpsvJqepwNrGtnFKWzykoIYVWdQLmMVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('EcabNKyahClAETHPFxcEzknItfyNFyStGWYJUqryokNFRWgXimRbCSmVGV4dA==')] = [[SUBMIT]];
-LMG2L[tLOsVZtrWM('lvDyUzPQWNYWIhUyXyvUOSgTdPAeyHBLWPlHeXuwCydOeOuAvNZjYDzVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('ytbMTJUyMDAknkysOyfTJKJWXsPXNabEpRBRoGRwBRgGGUBIKjyrxEpUG9zaXRpb24=')] = UDim2.new(0, 166, 0, 0);
-LMG2L[tLOsVZtrWM('tgOKYzLILTVTTKishOrBMlJUpclaeCZLfQnbbqjPBKhoeEONvzkENZSVGV4dEJ1dHRvbl9l')][tLOsVZtrWM('zGrdnfwwftFmLdzpJxrTFcTcFspDCuwFtVkeefmQcyUtauQJieqgDjgVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
-LMG2L[tLOsVZtrWM('TMNaDjWXzeZXoosNMPaZORVztKxSlgmAYkIEEwFKOtmQjynFWUipNfZVUlDb3JuZXJfZg==')] = Instance.new(tLOsVZtrWM('mOmtYEOMiaxOqSAyUKdOoqcEijMHLRrQZeVDEFLBTTRhsdnssrGzfxoVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('MTmDJYVQsNisQyPkLwcTUCflnizmrhSktmYGcDxONWkezHZFlDiHxazVGV4dEJ1dHRvbl9l')]);
-LMG2L[tLOsVZtrWM('FEElYkszllopyqnSWdhkzbDVQjdHkRgbviocySGdaThpNcxieMejzJVVGV4dEJ1dHRvbl9l')].MouseButton1Click:Connect(function()
-    local enteredKey = LMG2L[tLOsVZtrWM('phSdlgdVDQiMdBiGorumVWnqBjoBIHhzmGAaRmuACJDmnsaVemcGffSVGV4dEJveF85')].Text
-    if validateKey(enteredKey) then
-        LMG2L[tLOsVZtrWM('tTChXXfmMwVHJsPBetvVkGJvqIVkXtGINUIfTmeEeKHVNJzHuRSnxKXVGV4dEJ1dHRvbl9l')].Text = tLOsVZtrWM('gFTtFXKgcsxCCKwYEYQiNRWrGnavJugIYnKjLbCpcuVBqKLsUOZVksw4pyFIEFDQ0VQVEVEIQ==')
-        LMG2L[tLOsVZtrWM('juzZKcOyKoCRrtUmcSQTuzdyuWSINuTtEsCtyneVworhNpFbZKYiHzAVGV4dEJ1dHRvbl9l')].BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-        executeScript()
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('AnqcdqRhydOhwdk')] = 0;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsRhyd')] = 14;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('A`bjfqntmcBnknq2')] = Color3.fromRGB(179, 179, 179);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('EnmsE`bd')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Rhyd')] = UDim2.new(0, 142, 0, 34);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Sdws')] = [[SUBMIT]];
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Onrhshnm')] = UDim2.new(0, 166, 0, 0);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsBnknq2')] = Color3.fromRGB(0, 0, 0);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq^e')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')].MouseButton1Click:Connect(function()
+    local _IYdtP = _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].Text
+    if _OAo(_IYdtP) then
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')].Text = (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('✄@BBDOSDC ')
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')].BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+        _L_HbLU()
         wait(2)
-        LMG2L[tLOsVZtrWM('llFaIzyXkRorGMPZLDMNuDHqqoYaggELtqgbwWMLEbIVnQYaYCVmbXpU2NyZWVuR3VpXzE=')]:Destroy()
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('RbqddmFth^0')]:Destroy()
     else
-        LMG2L[tLOsVZtrWM('VaXvvWYihVkyLnQEchrrehkjZISZDEuVkOmTTonxjDsywnkNQsLoyEFVGV4dEJ1dHRvbl9l')].Text = tLOsVZtrWM('fWIVgAXXSbTzBAzHPjzMjRivxobvvQRimysPMZFtqGEIcRTmZeuALEd4p2MIElOVkFMSUQh')
-        LMG2L[tLOsVZtrWM('eKDrJbYIDdFJyRhDxxByZufilfQPrdPNGHCUOvvojEaFFWtVmjYvUYcVGV4dEJ1dHRvbl9l')].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')].Text = (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('❋HMU@KHC ')
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')].BackgroundColor3 = Color3.fromRGB(255, 0, 0)
         wait(1)
-        LMG2L[tLOsVZtrWM('RxGAMunsxhIKNRnINKNzEishycWCMwpDLBknxcoawPUtJBhdjXMXHhuVGV4dEJ1dHRvbl9l')].Text = tLOsVZtrWM('ZuoyMbGgzdnDVLXtLodhbQbtAEhErGbvMZhustcxxuIrkdRbdqLUfIjU1VCTUlU')
-        LMG2L[tLOsVZtrWM('ARqYTdkQLuAVeouGBMonGqpSGFVlCWUPIXUPzSefYXkevmetuZvOdNAVGV4dEJ1dHRvbl9l')].BackgroundColor3 = Color3.fromRGB(179, 179, 179)
-        LMG2L[tLOsVZtrWM('hEfurcClpafsZhwAXrsfqfRPKuHlBVuJVGzGCTkTKXyimpYpHNvBNYBVGV4dEJveF85')].Text = tLOsVZtrWM('UYVmqgmpOuRztTOSzJwxEngwBnKKSIUtAMTRaiHPfeSxaHbIElaspfV')
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')].Text = (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('RTALHS')
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^d')].BackgroundColor3 = Color3.fromRGB(179, 179, 179)
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].Text = ""
     end
 end)
-LMG2L[tLOsVZtrWM('hxsyASUilyopRsVLpvhftnuXmwrbCuXdmnpwdbEKnJtjxgKJvWSARnMVUlDb3JuZXJfMTA=')] = Instance.new(tLOsVZtrWM('eIeOssNGYUQChigbLDwArJcBbdZzDxptiKLDobYZUMcGHEcQmMukCZtVUlDb3JuZXI='), LMG2L[tLOsVZtrWM('KVrGwotyIyOJhEbxsPbUmGbpTUVEGoTFGFQIRiMEZjFuHCADpLQwEFDVGV4dEJ1dHRvbl9k')]);
-LMG2L[tLOsVZtrWM('pdqkmClFfFZQeSEsIodRwVzHmQKMETjSMrcBhRxwQupVSqUwTUDbDGXVGV4dExhYmVsXzEx')] = Instance.new(tLOsVZtrWM('FuHdGFTZGuTxyjPyNNEdcYbOUslJltKpEcIbYddDlAVYhaiXTeVcyBlVGV4dExhYmVs'), LMG2L[tLOsVZtrWM('VbbMLTJFdyiYYBnVfWdbvdkLSnoUWvjhbDUlDpCOZOMqGzScYHcLnZoRnJhbWVfMg==')]);
-LMG2L[tLOsVZtrWM('vdRVCgbFeTCOgwuDePQfAWbCAUznchewAUeUcImkdIPZgKPxHPepGCDVGV4dExhYmVsXzEx')][tLOsVZtrWM('RIcHcDwwOrrhpUYVfczEuhoVAmSgIeldWCPvejKOVaUQwZyILDcZynKQm9yZGVyU2l6ZVBpeGVs')] = 0;
-LMG2L[tLOsVZtrWM('mecRTffmwsPeKZBgAknSqHmcfPXUZNwXAcNKSQjsbbHAtUXoZedoUauVGV4dExhYmVsXzEx')][tLOsVZtrWM('kKFUZZhMOfvaxQnsencbZPTaWXVNncZOPagjfOosqWQALKcPlCNCvmWVGV4dFNpemU=')] = 20; -- Changed from 14 to 20
-LMG2L[tLOsVZtrWM('iseccWtLbiWVNVnCmvKyrJoLszNgiaEFyUHkAWYiMzcxwjknHrBirQbVGV4dExhYmVsXzEx')][tLOsVZtrWM('MopUkquRDfAbvMRqqgkBAtRrwOOeKmrvyBAENDfuOzDJZOUwyEOvLPfQmFja2dyb3VuZENvbG9yMw==')] = Color3.fromRGB(179, 179, 179);
-LMG2L[tLOsVZtrWM('HDnEDLXXYPBawipyfWOVyTTlRdaQCNFHzhylMolhcTxnSXUPZGeEPbsVGV4dExhYmVsXzEx')][tLOsVZtrWM('AZZtDdYMTaLUYcRoXqQftYnPPJHFKxeIpfktDFmfJJjaxMRJYJPkqBjRm9udEZhY2U=')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
-LMG2L[tLOsVZtrWM('RtwpqFibuEXAJtEPIJJYdHVrdgXMyRvPVQFuvcuAHenFMNsrrGhFTnNVGV4dExhYmVsXzEx')][tLOsVZtrWM('ZHfOMoMRqBuXcTWsYPJQakuWJkmgasfcKCDrXdlIjhvjyCVGHfUjtFYU2l6ZQ==')] = UDim2.new(0, 300, 0, 16);
-LMG2L[tLOsVZtrWM('DxlGnloeHmgJMpnJEwqLRjRFZAWFpzegoWkrkpgIFNvtzbgtAYftkQRVGV4dExhYmVsXzEx')][tLOsVZtrWM('FmSLIGBvdOphmYxDnEaNmPuHuWzLQQjHbQhErfiaYcoMGZsLgGnwBxwVGV4dA==')] = [[JOIN MY DISCORD TO GET KEY]];
-LMG2L[tLOsVZtrWM('CLAbneWYCBMgEdFyafwFIYyEmijfxhqkncWzbbvpZLBZoWIiIzuDdmVVGV4dExhYmVsXzEx')][tLOsVZtrWM('DZLKcpBEzloWuAzXfXhztpXHmjKubirtVvtRNTQauOYonYgyLljAZBWUG9zaXRpb24=')] = UDim2.new(0, 18, 0, 188);
-LMG2L[tLOsVZtrWM('SjyWZOFxjWruDhXbpXrMhVORxrNykhhHlOsvtKdkctdWBoKOiiYCGQtVGV4dExhYmVsXzEx')][tLOsVZtrWM('inCjKuKLLazGUKzyqJnKNvGxcUXIRHMTPxoBgdaeQCecilnnzJFVKKjVGV4dENvbG9yMw==')] = Color3.fromRGB(0, 0, 0);
-LMG2L[tLOsVZtrWM('qsRNvtCFXwcflbFXmaBppaqnFzyrInNxenPvKCGekQmLnjfsdYLQJNJVGV4dEJveF85')].Focused:Connect(function()
-    if LMG2L[tLOsVZtrWM('uMNVuMFehByXeDlNaWxubULpVUcvcvLDylHGtePOzspggOcrhWHbvbAVGV4dEJveF85')].Text == tLOsVZtrWM('VtcajJzXeivJFjGKclwEbvtpsASecPhfZcMZvkXLYWKYmaRWyFnBENnRU5URVIgS0VZ') then
-        LMG2L[tLOsVZtrWM('oXSODGsgynCDwjyDnUGNgwalxOdmWOrPfxSlEVUUmGpAsbRmLanmTwtVGV4dEJveF85')].Text = tLOsVZtrWM('cxhFiyATLcdDXZxwnycgMgtsySSjUwvjPTSKhEmOoeGOGYbKReTmLGY')
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq^0/')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('THBnqmdq'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAtssnm^c')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')] = Instance.new((function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk'), _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Eq`ld^1')]);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('AnqcdqRhydOhwdk')] = 0;
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsRhyd')] = 20; -- Changed from 14 to 20
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('A`bjfqntmcBnknq2')] = Color3.fromRGB(179, 179, 179);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('EnmsE`bd')] = Font.new([[rbxasset://fonts/families/Inconsolata.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Rhyd')] = UDim2.new(0, 300, 0, 16);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Sdws')] = [[JOIN MY DISCORD TO GET KEY]];
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('Onrhshnm')] = UDim2.new(0, 18, 0, 188);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsK`adk^00')][(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsBnknq2')] = Color3.fromRGB(0, 0, 0);
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].Focused:Connect(function()
+    if _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].Text == (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('DMSDQJDX') then
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].Text = ""
     end
 end)
-LMG2L[tLOsVZtrWM('tspvvlgKXUDKTSCiezwPpAvpTYmLawneJORsHbKaCsfwcuoZcgwiKLxVGV4dEJveF85')].FocusLost:Connect(function()
-    if LMG2L[tLOsVZtrWM('PCnWrnOkRiaaiYsQhjPLdPqKyKuhBikokgznIylExcGHEcQLKkXrBSfVGV4dEJveF85')].Text == tLOsVZtrWM('NXVCrOwOBFEwBFPFcpKxgCamucIBpEdoQlOhuTAKOXIldVNcvNyBHny') then
-        LMG2L[tLOsVZtrWM('oLohMSktFTKDrOpttqRzTdlwyKcKAsSgnelysZRdUHlcZhHAHRVlXMjVGV4dEJveF85')].Text = tLOsVZtrWM('hDHEOePPKqIujfqKenuoTCUAloRkbOFziPihuOGHNUXYCLFArTcCqqHRU5URVIgS0VZ')
+_izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].FocusLost:Connect(function()
+    if _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].Text == "" then
+        _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('SdwsAnw^8')].Text = (function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('DMSDQJDX')
     end
 end)
-return LMG2L[tLOsVZtrWM('aHhhrCGWqOdvlYSomIUTlZrRaduptaFLsqeDalNNBYgbhUTnkuCpfKxU2NyZWVuR3VpXzE=')], require;    
+return _izqsvyo[(function(s) local _YzK='' for i=1,#s do _YzK=_YzK..string.char(s:byte(i)+1) end return _YzK end)('RbqddmFth^0')], require;
